@@ -1,0 +1,32 @@
+.project-detail--survival-log{background:linear-gradient(125deg,rgba(12,29,26,.94),rgba(26,35,29,.9)),url('/portfolio/survival-log/home.png') center/cover fixed;--action-ink:#fff1cb;--action-accent:#426756;--action-accent-light:#e6be70;--action-edge:#9d946c;--action-panel:rgba(16,37,31,.65);color:#f3ecd9}
+.project-detail--survival-log .project-detail__panel{width:min(1280px,calc(100% - 48px));padding:28px 36px 80px;background:transparent;border:0;border-radius:0;box-shadow:none}
+.project-detail--survival-log .project-detail__toolbar{background:none;border:0;box-shadow:none;margin-bottom:55px}
+.project-detail--survival-log .project-detail__action{border-radius:3px 12px 3px 12px;border:1px solid #a69c79;color:#fff1cf;background:rgba(40,63,51,.7);box-shadow:inset 0 0 0 3px rgba(240,220,173,.07)}
+.project-detail--survival-log .project-detail__action::before{background:none}
+.project-detail--survival-log .project-detail__action:hover{background:#496c55;color:#fff8e6;transform:translateY(-2px)}
+.survival-case{font-family:'Microsoft YaHei',sans-serif;line-height:1.9;color:#e8e4d5}
+.survival-case__intro{padding:0 0 40px;max-width:950px}
+.survival-case__intro>span,.survival-case__copy>span,.survival-case__plans>span{font:12px/1.5 monospace;letter-spacing:.17em;color:#d8bb79}
+.survival-case h1{font-size:clamp(36px,5.5vw,70px);line-height:1.18;letter-spacing:-.025em;margin:20px 0;color:#fff0d1}
+.survival-case h1 small{display:block;font-size:.52em;letter-spacing:.04em;margin-top:15px;color:#b7cfb8}
+.survival-case__intro>p{font-size:clamp(19px,2vw,26px);color:#e5c077}
+.survival-case__facts{display:flex;flex-wrap:wrap;gap:10px 26px;font-size:12px;color:#b5c1b4}
+.survival-case__facts span::before{content:'•';color:#d5b772;margin-right:8px}
+.survival-case figure{margin:0}.survival-case figure a{display:block}.survival-case figure img{display:block;width:100%;height:auto;border:1px solid rgba(210,199,159,.35);border-radius:3px;object-fit:contain}
+.survival-case figcaption{font-size:12px;color:#b6bbaa;line-height:1.7;padding-top:10px}
+.survival-case__contents{display:flex;flex-wrap:wrap;gap:10px 28px;padding:25px 0;border-bottom:1px solid #65705b;margin-bottom:65px}
+.survival-case__contents a{font-size:13px;color:#e4c58c;text-decoration:none}.survival-case__contents a:hover{color:#fff1cf;text-decoration:underline}
+.survival-case section{scroll-margin-top:25px;margin:0 0 85px}.survival-case h2{font-size:clamp(24px,3vw,36px);line-height:1.5;color:#f9edce;margin:13px 0 22px}.survival-case p{font-size:16px;margin:0 0 18px;max-width:840px}
+.survival-case__copy{margin-bottom:30px}.survival-case__copy aside{padding:16px 22px;border-left:3px solid #ddbb70;background:rgba(218,196,143,.07);font-size:14px;max-width:900px;color:#e6d7b6}
+.survival-case__pair{display:grid;grid-template-columns:1fr 1fr;gap:26px;align-items:start}.survival-case__pair--panels{max-width:950px}.survival-case__pair--panels figure img{max-height:620px;width:100%;object-fit:contain;background:rgba(9,24,22,.3)}
+.survival-case__features{display:grid;grid-template-columns:1fr 1fr;gap:20px 50px;margin-bottom:30px}.survival-case__features>div{border-top:1px solid #61745e;padding-top:16px}.survival-case h3{color:#cfdaa9;font-size:18px;margin:0 0 12px}.survival-case__features p{font-size:14px;color:#c4cbbb}
+.survival-case details{border-top:1px solid #68715b;border-bottom:1px solid #68715b;padding:18px 0}.survival-case summary{cursor:pointer;color:#e5c17a}.survival-case details>figure{max-width:850px;margin:25px auto 35px}.survival-case details .survival-case__pair{row-gap:28px}
+.survival-case__plans{border-top:1px dashed #9a8e67;padding-top:36px}.survival-case__plans p{color:#c9c5b5}
+.map-preview__creature--survival-log{width:clamp(150px,12vw,210px)}
+.creature-art--survival-log{animation:supply-turtle-walk 2.8s ease-in-out infinite}
+.supply-turtle{position:absolute;inset:14% 0;display:block;background-image:url('/map-preview/survival-log-turtle-walk.png');background-size:200% 100%;background-repeat:no-repeat;animation:supply-turtle-frame 2.8s steps(1,end) infinite}
+.supply-turtle--extended{background-position:left center}.supply-turtle--retracted{background-position:right center;animation-name:supply-turtle-frame-retracted}
+@keyframes supply-turtle-frame{0%,38%,76%,100%{opacity:1}46%,68%{opacity:0}}@keyframes supply-turtle-frame-retracted{0%,38%,76%,100%{opacity:0}46%,68%{opacity:1}}@keyframes supply-turtle-walk{0%,100%{transform:translateX(-3px)}40%{transform:translateX(2px) translateY(-2px)}65%{transform:translateX(3px) translateY(2px)}}
+.map-preview__creature:hover .supply-turtle,.map-preview__creature:focus-visible .supply-turtle{animation-play-state:paused}
+@media(max-width:650px){.project-detail--survival-log .project-detail__panel{width:100%;margin:0;padding:20px 20px 45px}.project-detail--survival-log{background-attachment:scroll}.project-detail--survival-log .project-detail__toolbar{margin-bottom:32px}.survival-case__pair,.survival-case__features{grid-template-columns:1fr}.survival-case section{margin-bottom:55px}.survival-case p{font-size:14px}.survival-case__contents{gap:12px 21px;margin-bottom:40px}.map-preview__creature--survival-log{width:145px}}
+@media(prefers-reduced-motion:reduce){.creature-art--survival-log,.supply-turtle{animation:none}.supply-turtle--retracted{display:none}}

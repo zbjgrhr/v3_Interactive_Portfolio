@@ -1,0 +1,25 @@
+.portfolio-entry{display:grid;grid-template-columns:1fr 1fr;min-height:100svh;background:#fff;color:#20272a;font-family:"Microsoft YaHei",sans-serif}
+.portfolio-entry__identity{position:absolute;z-index:3;top:36px;left:5vw;right:5vw;display:flex;justify-content:space-between;pointer-events:none;color:#fff;font-size:13px;font-weight:600;letter-spacing:.12em}
+.portfolio-entry__identity span:last-child{color:#687076;font:11px/1.5 "Courier New",monospace;letter-spacing:.16em}
+.portfolio-entry__path{position:relative;display:flex;align-items:center;min-height:100svh;padding:112px clamp(28px,5vw,90px);overflow:hidden;color:inherit;text-decoration:none;isolation:isolate}
+.portfolio-entry__path--world{color:#fff7e4;background:#143349}
+.portfolio-entry__scenery{position:absolute;z-index:-1;inset:0;background:linear-gradient(180deg,rgba(11,29,46,.12),rgba(8,25,43,.43) 45%,rgba(7,24,41,.8)),url('/map-preview/world-original.png') 27% center/cover;transition:transform 1s cubic-bezier(.2,.7,.2,1)}
+.portfolio-entry__path--world:hover .portfolio-entry__scenery{transform:scale(1.035)}
+.portfolio-entry .portfolio-entry__path--world:hover{color:#e4c4ad}
+.portfolio-entry .portfolio-entry__path--direct:hover{color:#704b36}
+.portfolio-entry__copy{position:relative;width:100%;max-width:530px;margin:auto}
+.portfolio-entry__eyebrow{display:block;margin-bottom:32px;font:11px/1.5 "Courier New",monospace;letter-spacing:.18em;opacity:.78}
+.portfolio-entry h1,.portfolio-entry h2{margin:0;font:600 clamp(38px,4.6vw,78px)/1.22 Georgia,"Microsoft YaHei",serif;letter-spacing:-.035em}
+.portfolio-entry h1{text-shadow:0 4px 28px rgba(8,22,37,.45)}
+.portfolio-entry__copy p{max-width:330px;margin:26px 0 34px;font-size:14px;line-height:1.9;opacity:.87}
+.portfolio-entry__button{display:inline-flex;align-items:center;justify-content:space-between;gap:48px;min-height:54px;padding:14px 23px;border:1px solid rgba(255,241,203,.65);border-radius:3px;background:rgba(16,37,52,.3);font-size:14px;font-weight:600;transition:background .2s,transform .2s}
+.portfolio-entry__button>span{font-size:22px;font-weight:400}
+.portfolio-entry__path:hover .portfolio-entry__button{transform:translateX(4px);background:#704b36;color:#fff8f1;border-color:#c6a58d}
+.portfolio-entry__path--direct .portfolio-entry__button{background:#252e31;color:#fff;border-color:#252e31}
+.portfolio-entry__path--direct:hover .portfolio-entry__button{background:#704b36;border-color:#704b36}
+.portfolio-entry__path--direct .portfolio-entry__eyebrow{color:#747b7e}
+.portfolio-entry__index{position:absolute;top:-35px;right:0;color:#d8dedd;font:80px/1 Georgia,serif}
+.portfolio-entry__footnote{position:absolute;bottom:34px;left:clamp(28px,5vw,90px);font-size:11px;letter-spacing:.08em;opacity:.65}
+.portfolio-entry__path:focus-visible{outline:4px solid #cfaa65;outline-offset:-6px}
+@media(max-width:700px){.portfolio-entry{grid-template-columns:1fr}.portfolio-entry__identity{top:22px;left:26px;right:26px}.portfolio-entry__identity span:last-child{color:#fff9e7}.portfolio-entry__path{min-height:50svh;padding:76px 28px 51px}.portfolio-entry__path--direct{padding-top:38px}.portfolio-entry__copy{max-width:none}.portfolio-entry h1,.portfolio-entry h2{font-size:clamp(30px,7.5vw,44px)}.portfolio-entry h1 br,.portfolio-entry h2 br{display:none}.portfolio-entry__eyebrow{margin-bottom:13px;font-size:10px}.portfolio-entry__copy p{max-width:none;margin:13px 0 19px;font-size:12px}.portfolio-entry__button{min-height:44px;padding:9px 17px;font-size:13px}.portfolio-entry__footnote{bottom:17px;left:28px;font-size:10px}.portfolio-entry__index{top:-9px;right:0;font-size:48px}}
+@media(prefers-reduced-motion:reduce){.portfolio-entry__scenery,.portfolio-entry__button{transition:none}}

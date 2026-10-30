@@ -1,0 +1,14 @@
+.language-switch{display:inline-flex;align-items:center;gap:2px;flex-shrink:0;color:#263335;font-family:Georgia,"Times New Roman",serif;white-space:nowrap;pointer-events:auto}
+.language-switch>span{display:inline-flex;align-items:center}.language-switch i{font-size:14px;font-weight:400;font-style:normal;opacity:.3;margin:0 3px}
+.language-switch button{position:relative;border:0;border-radius:0;background:transparent;color:inherit;min-width:38px;min-height:42px;padding:10px 5px;font:400 14px/1 Georgia,"Times New Roman",serif;letter-spacing:.08em;opacity:.5;cursor:pointer;transition:opacity .18s}
+.language-switch button[aria-pressed=true]{opacity:1;font-weight:700}.language-switch button[aria-pressed=true]::after{content:"";position:absolute;bottom:5px;left:9px;right:10px;height:1px;background:currentColor}
+.language-switch button:hover{opacity:1}.language-switch button:focus-visible{outline:2px solid #ab8751;outline-offset:2px;border-radius:2px}
+.language-switch--world{color:#fff2cf;padding:0 9px;background:rgba(20,38,54,.38);border:1px solid #fff0cc66;border-radius:999px;backdrop-filter:blur(10px)}
+.language-switch--world button{min-height:40px;font-size:13px}.language-switch--world button[aria-pressed=true]::after{background:#e8c586}
+.language-switch--floating{position:fixed;right:25px;bottom:18px;z-index:2147483000;background:rgba(255,252,242,.93);padding:0 10px;border-radius:4px}
+.portfolio-entry__identity{align-items:center}.portfolio-entry__identity>span:nth-child(2){margin-left:auto;margin-right:30px}.portfolio-entry__identity .language-switch{color:#464e4c}
+.work-directory__header>.language-switch{margin-left:0}.work-directory__header>nav:not(.language-switch){margin-left:auto}
+.project-detail__language-row{display:flex;justify-content:flex-end;padding:0 10px 5px}.project-detail__language-row .language-switch{color:#fff7e0;text-shadow:0 1px 4px #182b3d80}
+@media(max-width:700px){.portfolio-entry__identity>span:nth-child(2){display:none}.portfolio-entry__identity .language-switch{margin-left:auto;color:#fff6df}.work-directory__header{position:relative}.work-directory__header>.language-switch{position:absolute;right:0;top:13px}.work-directory__header>nav:not(.language-switch){margin-left:0}.language-switch button{min-height:42px}.language-switch--floating{right:12px;bottom:12px}}
+@media(prefers-reduced-motion:reduce){.language-switch button{transition:none}}
+.portfolio-entry__identity>span:nth-child(2){color:#687076}.portfolio-entry__identity .language-switch span{color:inherit;margin:0;font:inherit;letter-spacing:normal}.work-directory__header>nav.language-switch{gap:2px}

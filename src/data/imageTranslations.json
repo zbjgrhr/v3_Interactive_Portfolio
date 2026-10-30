@@ -1,0 +1,1166 @@
+{
+  "/map-preview/concepts/pixel-world-detail.webp": {
+    "src": "/portfolio/localized/en/pixel-world-concept-cover.png",
+    "status": "translated",
+    "note": "English translation edition; original retained for Chinese."
+  },
+  "/portfolio/pixel-world-concept-cover.png": {
+    "src": "/portfolio/localized/en/pixel-world-concept-cover.png",
+    "status": "translated",
+    "note": "English translation edition; original retained for Chinese."
+  },
+  "/portfolio/pixel-world-case-01-prompt-spec-agents.png": {
+    "src": "/portfolio/localized/en/pixel-world-case-01-prompt-spec-agents.png",
+    "status": "translated",
+    "note": "English translation edition; original retained for Chinese."
+  },
+  "/portfolio/pixel-world-case-03-agent-config.png": {
+    "src": "/portfolio/localized/en/pixel-world-case-03-agent-config.png",
+    "status": "translated",
+    "note": "English translation edition; original retained for Chinese."
+  },
+  "/portfolio/pixel-world-case-04-asset-system.png": {
+    "src": "/portfolio/localized/en/pixel-world-case-04-asset-system.png",
+    "status": "translated",
+    "note": "English translation edition; original retained for Chinese."
+  },
+  "/portfolio/pixel-world-case-06-generated-world.png": {
+    "src": "/portfolio/localized/en/pixel-world-case-06-generated-world.png",
+    "status": "translated",
+    "note": "English translation edition; original retained for Chinese."
+  },
+  "/portfolio/pixel-world-case-07-moonshadow-level.png": {
+    "src": "/portfolio/localized/en/pixel-world-case-07-moonshadow-level.png",
+    "status": "translated",
+    "note": "English translation edition; original retained for Chinese."
+  },
+  "/portfolio/pixel-world-case-08-playable-worlds.png": {
+    "src": "/portfolio/localized/en/pixel-world-case-08-playable-worlds.png",
+    "status": "translated",
+    "note": "English translation edition; original retained for Chinese."
+  },
+  "/portfolio/pixel-world-case-02-model-routing.png": {
+    "src": "/portfolio/localized/en/pixel-world-case-02-model-routing.png",
+    "status": "translated",
+    "note": "English translation edition; original retained for Chinese."
+  },
+  "/portfolio/pixel-world-case-05-cover-particles.png": {
+    "src": "/portfolio/localized/en/pixel-world-case-05-cover-particles.png",
+    "status": "translated",
+    "note": "English translation edition; original retained for Chinese."
+  },
+  "/map-preview/curated/pixel-world-01.webp": {
+    "src": "/portfolio/localized/en/pixel-world-01.png",
+    "status": "translated",
+    "note": "English translation edition; original retained for Chinese."
+  },
+  "/map-preview/curated/pixel-world-02.webp": {
+    "src": "/portfolio/localized/en/pixel-world-02.png",
+    "status": "translated",
+    "note": "English translation edition; original retained for Chinese."
+  },
+  "/map-preview/curated/pixel-world-03.webp": {
+    "src": "/portfolio/localized/en/pixel-world-03.png",
+    "status": "translated",
+    "note": "English translation edition; original retained for Chinese."
+  },
+  "/map-preview/curated/pixel-world-04.webp": {
+    "src": "/portfolio/localized/en/pixel-world-04.png",
+    "status": "translated",
+    "note": "English translation edition; original retained for Chinese."
+  },
+  "/map-preview/concepts/pixel-world-card.webp": {
+    "src": "/portfolio/localized/en/pixel-world-concept-cover.png",
+    "status": "translated",
+    "note": "English translation edition; original retained for Chinese."
+  },
+  "/portfolio/pixel-world-v5-gameplay-level-1.png": {
+    "src": "/portfolio/localized/en/pixel-world-gameplay-backdrop.png",
+    "status": "translated",
+    "note": "English gameplay backdrop used by both CSS and Phaser textures."
+  },
+  "/portfolio/rain-arcade-hero.png": {
+    "src": "/portfolio/rain-arcade-hero.png",
+    "status": "unchanged",
+    "note": "Background visually audited: no Chinese text."
+  },
+  "/map-preview/concepts/auto-tune.png": {
+    "src": "/map-preview/concepts/auto-tune.png",
+    "status": "unchanged",
+    "note": "Background visually audited: no Chinese text."
+  },
+  "/map-preview/concepts/literature-research-assistant.png": {
+    "src": "/map-preview/concepts/literature-research-assistant.png",
+    "status": "unchanged",
+    "note": "Background visually audited: no Chinese text."
+  },
+  "/map-preview/interactive-portfolio-logo.svg": {
+    "src": "/portfolio/localized/en/interactive-portfolio-logo.svg",
+    "status": "translated",
+    "note": "English vector wordmark."
+  },
+  "/contact/wechat-qr.jpg": {
+    "src": "/contact/wechat-qr.jpg",
+    "status": "translated-overlay",
+    "note": "QR code pixels preserved; English labels overlay the surrounding Chinese text.",
+    "overlays": [
+      {
+        "left": 31,
+        "top": 8,
+        "width": 55,
+        "height": 12,
+        "text": "Extrovert\nLanzhou, Gansu, China",
+        "background": "#ffffff",
+        "color": "#666666",
+        "fontSizeCqi": 3
+      },
+      {
+        "left": 13,
+        "top": 85.5,
+        "width": 76,
+        "height": 9,
+        "text": "Scan to add me on WeChat.",
+        "background": "#ffffff",
+        "color": "#888888",
+        "fontSizeCqi": 3
+      }
+    ],
+    "enlargedSrc": "/portfolio/localized/en/wechat-qr.html"
+  },
+  "/portfolio/map-teleport/logo.png": {
+    "src": "/portfolio/localized/en/map-teleport-logo.png",
+    "status": "translated",
+    "note": "English logo subtitle; original preserved."
+  },
+  "/portfolio/map-teleport/base-map-menu.png": {
+    "src": "/portfolio/map-teleport/base-map-menu.png",
+    "status": "unchanged",
+    "note": "Inspected: all menu and map labels already English."
+  },
+  "/portfolio/map-teleport/vehicle-map-menu.png": {
+    "src": "/portfolio/map-teleport/vehicle-map-menu.png",
+    "status": "unchanged",
+    "note": "Inspected: all visible menu, map and promotional text already English."
+  },
+  "/portfolio/map-teleport/menu-coexistence.png": {
+    "src": "/portfolio/map-teleport/menu-coexistence.png",
+    "status": "unchanged",
+    "note": "Inspected: all visible game interface text already English."
+  },
+  "/map-preview/concepts/map-teleport-detail.webp": {
+    "src": "/portfolio/localized/en/map-teleport-detail.png",
+    "status": "translated",
+    "note": "English image variant; original preserved. Screenshot variants explicitly labeled English translation."
+  },
+  "/portfolio/map-teleport/base-workshop.png": {
+    "src": "/portfolio/localized/en/map-teleport-base-workshop.png",
+    "status": "translated",
+    "note": "English image variant; original preserved. Screenshot variants explicitly labeled English translation."
+  },
+  "/portfolio/map-teleport/vehicle-workshop.png": {
+    "src": "/portfolio/localized/en/map-teleport-vehicle-workshop.png",
+    "status": "translated",
+    "note": "English image variant; original preserved. Screenshot variants explicitly labeled English translation."
+  },
+  "/portfolio/survival-log/concept.webp": {
+    "src": "/portfolio/localized/en/survival-log-concept.png",
+    "status": "translated",
+    "note": "English translation image; original preserved. Primary values, labels and states reviewed."
+  },
+  "/portfolio/survival-log/resources.png": {
+    "src": "/portfolio/localized/en/survival-log-resources.png",
+    "status": "translated",
+    "note": "English translation of original screenshot; original preserved. Values and states reviewed."
+  },
+  "/portfolio/survival-log/backpack-settings.png": {
+    "src": "/portfolio/localized/en/survival-log-backpack.png",
+    "status": "translated",
+    "note": "English translation of original screenshot; original preserved. Values and states reviewed."
+  },
+  "/portfolio/survival-log/storage-settings.png": {
+    "src": "/portfolio/localized/en/survival-log-storage.png",
+    "status": "translated",
+    "note": "English translation of original screenshot; original preserved. Values and states reviewed."
+  },
+  "/portfolio/survival-log/facilities.png": {
+    "src": "/portfolio/localized/en/survival-log-facilities.png",
+    "status": "translated",
+    "note": "English translation of original screenshot; original preserved. Values and states reviewed."
+  },
+  "/portfolio/survival-log/time.png": {
+    "src": "/portfolio/localized/en/survival-log-time.png",
+    "status": "translated",
+    "note": "English translation of original screenshot; original preserved. Values and states reviewed."
+  },
+  "/portfolio/survival-log/inventory.png": {
+    "src": "/portfolio/localized/en/survival-log-inventory.png",
+    "status": "translated",
+    "note": "English translation of original screenshot; original preserved. Values and states reviewed."
+  },
+  "/portfolio/survival-log/features-en.webp": {
+    "src": "/portfolio/survival-log/features-en.webp",
+    "status": "unchanged",
+    "note": "Inspected: existing full English feature atlas; future plans explicitly marked as planned."
+  },
+  "/map-preview/concepts/map-teleport-card.webp": {
+    "src": "/portfolio/localized/en/map-teleport-detail.png",
+    "status": "translated",
+    "note": "Same source artwork as detail; reuses English detail artwork."
+  },
+  "/map-preview/concepts/survival-log-card.webp": {
+    "src": "/portfolio/localized/en/survival-log-concept.png",
+    "status": "translated",
+    "note": "Same original artwork as concept; reuses English concept artwork."
+  },
+  "/portfolio/survival-log/shelves.png": {
+    "src": "/portfolio/localized/en/survival-log-shelves.png",
+    "status": "translated",
+    "note": "English translation image; original preserved. Primary values, labels and states reviewed."
+  },
+  "/portfolio/survival-log/regions-map.png": {
+    "src": "/portfolio/localized/en/survival-log-regions-map.png",
+    "status": "translated",
+    "note": "English translation image; original preserved. Primary values, labels and states reviewed."
+  },
+  "/portfolio/survival-log/regions-confirm.png": {
+    "src": "/portfolio/localized/en/survival-log-regions-confirm.png",
+    "status": "translated",
+    "note": "English translation image; original preserved. Primary values, labels and states reviewed."
+  },
+  "/portfolio/survival-log/home.png": {
+    "src": "/portfolio/survival-log/home.png",
+    "status": "translated-overlay",
+    "note": "Original screenshot with English text overlays. Original game values retained; the one overlapping Chinese damage/health label is transcribed as Bag HP −34 · 548/780.",
+    "overlays": [
+      {
+        "left": 1.3,
+        "top": 2.6,
+        "width": 9.5,
+        "height": 3.5,
+        "text": "Horde Active",
+        "background": "#70191d",
+        "color": "#ff7277",
+        "fontSizeCqi": 1.3888888888888888
+      },
+      {
+        "left": 0.7,
+        "top": 6.5,
+        "width": 9.8,
+        "height": 2.4,
+        "text": "Phase 7 · Day 22",
+        "background": "#17201d",
+        "color": "#f3f3e8",
+        "fontSizeCqi": 1.074561403508772
+      },
+      {
+        "left": 0.7,
+        "top": 11.6,
+        "width": 3,
+        "height": 3,
+        "text": "Rain",
+        "background": "#702223",
+        "color": "#f3f3e8",
+        "fontSizeCqi": 1.3157894736842106
+      },
+      {
+        "left": 0.6,
+        "top": 17.1,
+        "width": 3.5,
+        "height": 2.7,
+        "text": "Horde",
+        "background": "#6c1b1d",
+        "color": "#f3f3e8",
+        "fontSizeCqi": 1.2280701754385965
+      },
+      {
+        "left": 4.1,
+        "top": 17.1,
+        "width": 5.4,
+        "height": 2.7,
+        "text": "Surge",
+        "background": "#a32b32",
+        "color": "#f3f3e8",
+        "fontSizeCqi": 1.4556521739130437
+      },
+      {
+        "left": 0.6,
+        "top": 22,
+        "width": 4.7,
+        "height": 2.3,
+        "text": "Remaining",
+        "background": "#291c1d",
+        "color": "#f3f3e8",
+        "fontSizeCqi": 0.9161793372319689
+      },
+      {
+        "left": 0.6,
+        "top": 25.2,
+        "width": 10.7,
+        "height": 2.4,
+        "text": "Other structures intact ✓",
+        "background": "#201b18",
+        "color": "#f3f3e8",
+        "fontSizeCqi": 0.7508771929824561
+      },
+      {
+        "left": 2.7,
+        "top": 29,
+        "width": 4.4,
+        "height": 2.7,
+        "text": "Plants",
+        "background": "#24221c",
+        "color": "#f3f3e8",
+        "fontSizeCqi": 1.2865497076023393
+      },
+      {
+        "left": 11.6,
+        "top": 29,
+        "width": 2.6,
+        "height": 2.7,
+        "text": "Replant",
+        "background": "#24221c",
+        "color": "#f3f3e8",
+        "fontSizeCqi": 0.6516290726817043
+      },
+      {
+        "left": 2.8,
+        "top": 33.5,
+        "width": 4.1,
+        "height": 2.6,
+        "text": "Traps",
+        "background": "#24221c",
+        "color": "#f3f3e8",
+        "fontSizeCqi": 1.4017391304347828
+      },
+      {
+        "left": 83.6,
+        "top": 0.5,
+        "width": 5,
+        "height": 2.4,
+        "text": "Endless",
+        "background": "#24221c",
+        "color": "#f3f3e8",
+        "fontSizeCqi": 1.2531328320802007
+      },
+      {
+        "left": 89.6,
+        "top": 21.8,
+        "width": 5,
+        "height": 2.6,
+        "text": "Survival Log",
+        "background": "#17201d",
+        "color": "#f3f3e8",
+        "fontSizeCqi": 0.7309941520467836
+      },
+      {
+        "left": 89.6,
+        "top": 27,
+        "width": 5,
+        "height": 2.6,
+        "text": "Rules",
+        "background": "#17201d",
+        "color": "#f3f3e8",
+        "fontSizeCqi": 1.4017391304347828
+      },
+      {
+        "left": 92,
+        "top": 32.4,
+        "width": 2.9,
+        "height": 2.6,
+        "text": "Track",
+        "background": "#17201d",
+        "color": "#f3f3e8",
+        "fontSizeCqi": 1.0175438596491229
+      },
+      {
+        "left": 92,
+        "top": 37.7,
+        "width": 2.9,
+        "height": 2.6,
+        "text": "Layout",
+        "background": "#17201d",
+        "color": "#f3f3e8",
+        "fontSizeCqi": 0.847953216374269
+      },
+      {
+        "left": 94.6,
+        "top": 57.6,
+        "width": 3,
+        "height": 2.5,
+        "text": "Floor 2",
+        "background": "#17201d",
+        "color": "#f3f3e8",
+        "fontSizeCqi": 0.7
+      },
+      {
+        "left": 95.5,
+        "top": 62.3,
+        "width": 2.4,
+        "height": 2.7,
+        "text": "Home",
+        "background": "#17201d",
+        "color": "#f3f3e8",
+        "fontSizeCqi": 0.8
+      },
+      {
+        "left": 93.5,
+        "top": 66.8,
+        "width": 5.1,
+        "height": 2.5,
+        "text": "Basement",
+        "background": "#17201d",
+        "color": "#f3f3e8",
+        "fontSizeCqi": 0.8
+      },
+      {
+        "left": 88.7,
+        "top": 77.6,
+        "width": 2.5,
+        "height": 2.5,
+        "text": "Indoor",
+        "background": "#17201d",
+        "color": "#f3f3e8",
+        "fontSizeCqi": 0.7309941520467836
+      },
+      {
+        "left": 95.2,
+        "top": 77.6,
+        "width": 3,
+        "height": 2.5,
+        "text": "Cozy",
+        "background": "#17201d",
+        "color": "#f3f3e8",
+        "fontSizeCqi": 1.3157894736842106
+      },
+      {
+        "left": 81.9,
+        "top": 82,
+        "width": 2.6,
+        "height": 2.6,
+        "text": "Fed",
+        "background": "#2d603d",
+        "color": "#f3f3e8",
+        "fontSizeCqi": 1.4017391304347828
+      },
+      {
+        "left": 86.4,
+        "top": 82,
+        "width": 5,
+        "height": 2.6,
+        "text": "Satiety",
+        "background": "#29573b",
+        "color": "#f3f3e8",
+        "fontSizeCqi": 0.95
+      },
+      {
+        "left": 72.5,
+        "top": 86.5,
+        "width": 3.7,
+        "height": 2.6,
+        "text": "Composed",
+        "background": "#2d603d",
+        "color": "#f3f3e8",
+        "fontSizeCqi": 0.8114035087719299
+      },
+      {
+        "left": 76.6,
+        "top": 86.5,
+        "width": 4.7,
+        "height": 2.6,
+        "text": "Fulfilled",
+        "background": "#2d603d",
+        "color": "#f3f3e8",
+        "fontSizeCqi": 0.9161793372319689
+      },
+      {
+        "left": 81.9,
+        "top": 86.5,
+        "width": 2.8,
+        "height": 2.6,
+        "text": "Cozy",
+        "background": "#2d603d",
+        "color": "#f3f3e8",
+        "fontSizeCqi": 1.2280701754385965
+      },
+      {
+        "left": 86.4,
+        "top": 86.5,
+        "width": 5,
+        "height": 2.6,
+        "text": "Morale",
+        "background": "#29573b",
+        "color": "#f3f3e8",
+        "fontSizeCqi": 0.95
+      },
+      {
+        "left": 74.1,
+        "top": 91,
+        "width": 4.3,
+        "height": 2.7,
+        "text": "Calm",
+        "background": "#2d603d",
+        "color": "#f3f3e8",
+        "fontSizeCqi": 1.4556521739130437
+      },
+      {
+        "left": 78.5,
+        "top": 91,
+        "width": 6.2,
+        "height": 2.7,
+        "text": "Fed & Hydrated",
+        "background": "#2d603d",
+        "color": "#f3f3e8",
+        "fontSizeCqi": 0.7769423558897244
+      },
+      {
+        "left": 86.4,
+        "top": 91,
+        "width": 5,
+        "height": 2.6,
+        "text": "Energy",
+        "background": "#29573b",
+        "color": "#f3f3e8",
+        "fontSizeCqi": 0.95
+      },
+      {
+        "left": 86.4,
+        "top": 95.6,
+        "width": 5,
+        "height": 2.6,
+        "text": "Health",
+        "background": "#29573b",
+        "color": "#f3f3e8",
+        "fontSizeCqi": 0.95
+      },
+      {
+        "left": 9.2,
+        "top": 89,
+        "width": 4.7,
+        "height": 2.5,
+        "text": "Music",
+        "background": "#27241c",
+        "color": "#f3f3e8",
+        "fontSizeCqi": 1.347826086956522
+      },
+      {
+        "left": 45.2,
+        "top": 40.3,
+        "width": 11,
+        "height": 1.7,
+        "text": "Sandbag destroyed; inactive",
+        "background": "#413326",
+        "color": "#f2e7dc",
+        "fontSizeCqi": 0.7147498375568552
+      },
+      {
+        "left": 21.45,
+        "top": 5.9,
+        "width": 1.5,
+        "height": 1.2,
+        "text": "Melon",
+        "background": "#24221c",
+        "color": "#f3f3e8",
+        "fontSizeCqi": 0.65
+      },
+      {
+        "left": 64.7,
+        "top": 9.2,
+        "width": 1.5,
+        "height": 1.2,
+        "text": "Melon",
+        "background": "#24221c",
+        "color": "#f3f3e8",
+        "fontSizeCqi": 0.65
+      },
+      {
+        "left": 36.35,
+        "top": 23,
+        "width": 1.7,
+        "height": 1.3,
+        "text": "Melon",
+        "background": "#24221c",
+        "color": "#f3f3e8",
+        "fontSizeCqi": 0.65
+      },
+      {
+        "left": 63.5,
+        "top": 12.5,
+        "width": 4,
+        "height": 1.5,
+        "text": "6d 00:47",
+        "background": "#24221c",
+        "color": "#f3f3e8",
+        "fontSizeCqi": 0.65
+      },
+      {
+        "left": 35.5,
+        "top": 27.1,
+        "width": 4.1,
+        "height": 1.5,
+        "text": "6d 01:19",
+        "background": "#24221c",
+        "color": "#f3f3e8",
+        "fontSizeCqi": 0.65
+      },
+      {
+        "left": 9.5,
+        "top": 41.3,
+        "width": 2.9,
+        "height": 1.6,
+        "text": "Bag HP",
+        "background": "#3c2725",
+        "color": "#e97b7c",
+        "fontSizeCqi": 0.65
+      },
+      {
+        "left": 50.2,
+        "top": 46.1,
+        "width": 3.1,
+        "height": 1.6,
+        "text": "Bag HP",
+        "background": "#3c2725",
+        "color": "#e97b7c",
+        "fontSizeCqi": 0.65
+      },
+      {
+        "left": 77,
+        "top": 53.6,
+        "width": 3.4,
+        "height": 1.6,
+        "text": "Bag HP",
+        "background": "#3c2725",
+        "color": "#e97b7c",
+        "fontSizeCqi": 0.65
+      },
+      {
+        "left": 45.6,
+        "top": 68.2,
+        "width": 3.9,
+        "height": 1.8,
+        "text": "Bag HP",
+        "background": "#3c2725",
+        "color": "#e97b7c",
+        "fontSizeCqi": 0.65
+      },
+      {
+        "left": 65.3,
+        "top": 78,
+        "width": 4.2,
+        "height": 1.8,
+        "text": "Bag HP",
+        "background": "#3c2725",
+        "color": "#e97b7c",
+        "fontSizeCqi": 0.65
+      },
+      {
+        "left": 53.3,
+        "top": 70.1,
+        "width": 6.1,
+        "height": 2,
+        "text": "Bag HP −34 · 548/780",
+        "background": "#3c2725",
+        "color": "#e97b7c",
+        "fontSizeCqi": 0.5
+      }
+    ],
+    "enlargedSrc": "/portfolio/localized/en/home.html"
+  },
+  "/map-preview/concepts/iwbtz-detail.webp": {
+    "src": "/map-preview/concepts/iwbtz-detail.webp",
+    "status": "unchanged",
+    "note": "English title only; text-free environment artwork."
+  },
+  "/map-preview/concepts/iwbtz-card.webp": {
+    "src": "/map-preview/concepts/iwbtz-card.webp",
+    "status": "unchanged",
+    "note": "English title only; same artwork as detail."
+  },
+  "/map-preview/curated/iwbtz-01.webp": {
+    "src": "/portfolio/localized/en/iwbtz-level-atlas-en.png",
+    "status": "translated",
+    "note": "English image edition generated and visually reviewed; original retained."
+  },
+  "/map-preview/curated/iwbtz-02.webp": {
+    "src": "/map-preview/curated/iwbtz-02.webp",
+    "status": "unchanged",
+    "note": "Visual inspection: no Chinese text or meaningful untranslated UI; environment artwork."
+  },
+  "/map-preview/curated/iwbtz-03.webp": {
+    "src": "/map-preview/curated/iwbtz-03.webp",
+    "status": "unchanged",
+    "note": "Visual inspection: no Chinese text or meaningful untranslated UI; environment artwork."
+  },
+  "/map-preview/curated/iwbtz-04.webp": {
+    "src": "/map-preview/curated/iwbtz-04.webp",
+    "status": "unchanged",
+    "note": "Visual inspection: no Chinese text or meaningful untranslated UI; environment artwork."
+  },
+  "/map-preview/concepts/preservative-detail.webp": {
+    "src": "/portfolio/localized/en/preservative-detail-en.png",
+    "status": "translated",
+    "note": "Bottom-right I人 badge translated as INTROVERT; English branding retained."
+  },
+  "/map-preview/concepts/preservative-card.webp": {
+    "src": "/portfolio/localized/en/preservative-detail-en.png",
+    "status": "translated",
+    "note": "Same composition as detail; reuse localized English badge."
+  },
+  "/map-preview/curated/preservative-01.webp": {
+    "src": "/map-preview/curated/preservative-01.webp",
+    "status": "unchanged",
+    "note": "Visual inspection confirms original Project Zomboid UI, tooltip or poison alert is already English."
+  },
+  "/map-preview/curated/preservative-02.webp": {
+    "src": "/map-preview/curated/preservative-02.webp",
+    "status": "unchanged",
+    "note": "Visual inspection confirms original Project Zomboid UI, tooltip or poison alert is already English."
+  },
+  "/map-preview/curated/preservative-03.webp": {
+    "src": "/map-preview/curated/preservative-03.webp",
+    "status": "unchanged",
+    "note": "Visual inspection confirms original Project Zomboid UI, tooltip or poison alert is already English."
+  },
+  "/map-preview/curated/preservative-04.webp": {
+    "src": "/map-preview/curated/preservative-04.webp",
+    "status": "unchanged",
+    "note": "Visual inspection confirms original Project Zomboid UI, tooltip or poison alert is already English."
+  },
+  "/portfolio/preservative-01-concept-approved.png": {
+    "src": "/portfolio/preservative-01-concept-approved.png",
+    "status": "unchanged",
+    "note": "English PRESERVATIVE title and IA symbol; no Chinese."
+  },
+  "/portfolio/preservative-02-campaign.png": {
+    "src": "/portfolio/preservative-02-campaign.png",
+    "status": "unchanged",
+    "note": "Text-free campaign illustration."
+  },
+  "/portfolio/preservative-03-visual-identity.png": {
+    "src": "/portfolio/localized/en/preservative-visual-identity-en.png",
+    "status": "translated",
+    "note": "English image edition generated and visually reviewed; original retained."
+  },
+  "/portfolio/preservative-04-gameplay-evidence.png": {
+    "src": "/portfolio/localized/en/preservative-gameplay-evidence-en.png",
+    "status": "translated",
+    "note": "English editorial labels; original English gameplay UI retained; English translation label."
+  },
+  "/portfolio/preservative-02-workshop.png": {
+    "src": "/portfolio/localized/en/preservative-workshop-en.png",
+    "status": "translated",
+    "note": "Steam interface translated, URL and metadata retained; English translation label."
+  },
+  "/portfolio/preservative-02-report-evidence.png": {
+    "src": "/portfolio/localized/en/preservative-report-evidence-en.png",
+    "status": "translated",
+    "note": "Report and Steam panels translated. Metrics 4,431 / 1,480 / 182 preserved. Author Huaxin Zhang verified against site identity. English translation label."
+  },
+  "/portfolio/iwbtz-case-01-concept.png": {
+    "src": "/portfolio/iwbtz-case-01-concept.png",
+    "status": "unchanged",
+    "note": "English title only; no Chinese."
+  },
+  "/portfolio/iwbtz-case-02-level-atlas.png": {
+    "src": "/portfolio/localized/en/iwbtz-level-atlas-en.png",
+    "status": "translated",
+    "note": "Same figure as curated IWBTZ 01; reuse English edition."
+  },
+  "/portfolio/iwbtz-case-06-memory-forest.png": {
+    "src": "/portfolio/localized/en/iwbtz-memory-forest-en.png",
+    "status": "translated",
+    "note": "English image edition generated and visually reviewed; original retained."
+  },
+  "/portfolio/iwbtz-case-07-school-pressure.png": {
+    "src": "/portfolio/localized/en/iwbtz-school-pressure-en.png",
+    "status": "translated",
+    "note": "English image edition generated and visually reviewed; original retained."
+  },
+  "/portfolio/preservative-02-ingame.gif": {
+    "src": "/portfolio/preservative-02-ingame.gif",
+    "status": "unchanged",
+    "note": "Animated bottle and hazard icon; no written language."
+  },
+  "/portfolio/iwbtz-case-03-multi-attack.gif": {
+    "src": "/portfolio/iwbtz-case-03-multi-attack.gif",
+    "status": "translated-overlay",
+    "note": "Preserve GIF. Fixed Chinese caption in bottom white band; overlay the two regions below in English.",
+    "overlays": [
+      {
+        "left": 12.5,
+        "top": 81,
+        "width": 81,
+        "height": 7,
+        "text": "Overlapping attacks steadily narrow the safe window",
+        "background": "#ffffff",
+        "color": "#41504e",
+        "fontSizeCqi": 1.5
+      },
+      {
+        "left": 12.5,
+        "top": 88,
+        "width": 81,
+        "height": 6,
+        "text": "Projectiles, vines and horizontal charges share a readable rhythm.",
+        "background": "#ffffff",
+        "color": "#65736f",
+        "fontSizeCqi": 1.5
+      }
+    ],
+    "enlargedSrc": "/portfolio/localized/en/iwbtz-case-03-multi-attack.html"
+  },
+  "/portfolio/iwbtz-case-04-core-loop.gif": {
+    "src": "/portfolio/iwbtz-case-04-core-loop.gif",
+    "status": "translated-overlay",
+    "note": "Preserve GIF. All Chinese is fixed in the peach left sidebar. Existing 04 and READ · MOVE · HIT remain.",
+    "overlays": [
+      {
+        "left": 5.8,
+        "top": 21,
+        "width": 17,
+        "height": 9,
+        "text": "Core loop",
+        "background": "#f5e8df",
+        "color": "#484745",
+        "fontSizeCqi": 1.5
+      },
+      {
+        "left": 10.3,
+        "top": 39,
+        "width": 13,
+        "height": 8,
+        "text": "Jump",
+        "background": "#f5e8df",
+        "color": "#6b6a64",
+        "fontSizeCqi": 1.5
+      },
+      {
+        "left": 10.3,
+        "top": 52,
+        "width": 13,
+        "height": 8,
+        "text": "Throw",
+        "background": "#f5e8df",
+        "color": "#6b6a64",
+        "fontSizeCqi": 1.5
+      },
+      {
+        "left": 10.3,
+        "top": 66,
+        "width": 13,
+        "height": 8,
+        "text": "Hit",
+        "background": "#f5e8df",
+        "color": "#6b6a64",
+        "fontSizeCqi": 1.5
+      }
+    ],
+    "enlargedSrc": "/portfolio/localized/en/iwbtz-case-04-core-loop.html"
+  },
+  "/portfolio/iwbtz-case-05-boss-pattern.gif": {
+    "src": "/portfolio/iwbtz-case-05-boss-pattern.gif",
+    "status": "translated-overlay",
+    "note": "Preserve GIF. Fixed caption at bottom inside white rounded strip, to right of 05 badge.",
+    "overlays": [
+      {
+        "left": 16.4,
+        "top": 83.6,
+        "width": 72,
+        "height": 7.8,
+        "text": "Pursuit and falling fireballs create attacks from both sides",
+        "background": "#ffffff",
+        "color": "#556460",
+        "fontSizeCqi": 1.5
+      }
+    ],
+    "enlargedSrc": "/portfolio/localized/en/iwbtz-case-05-boss-pattern.html"
+  },
+  "/portfolio/preservative-02-branded.gif": {
+    "src": "/portfolio/preservative-02-branded.gif",
+    "status": "translated-overlay",
+    "note": "Preserve GIF. Only Chinese is tiny I人 badge in lower-right brand footer.",
+    "overlays": [
+      {
+        "left": 80,
+        "top": 95,
+        "width": 13,
+        "height": 3.1,
+        "text": "INTROVERT",
+        "background": "#dc2a91",
+        "color": "#ffffff",
+        "title": "Introvert",
+        "fontSizeCqi": 1.5
+      }
+    ],
+    "enlargedSrc": "/portfolio/localized/en/preservative-02-branded.html"
+  },
+  "/map-preview/concepts/rainy-arcade-detail.webp": {
+    "src": "/portfolio/localized/en/rainy-main-0.png",
+    "status": "translated",
+    "note": "Image text localized into English; source artwork and layout retained."
+  },
+  "/map-preview/curated/rainy-arcade-01.webp": {
+    "src": "/portfolio/localized/en/rainy-main-1.png",
+    "status": "translated",
+    "note": "Image text localized into English; source artwork and layout retained."
+  },
+  "/map-preview/curated/rainy-arcade-02.webp": {
+    "src": "/portfolio/localized/en/rainy-main-2.png",
+    "status": "translated",
+    "note": "Image text localized into English; source artwork and layout retained."
+  },
+  "/map-preview/curated/rainy-arcade-03.webp": {
+    "src": "/portfolio/localized/en/rainy-main-3.png",
+    "status": "translated",
+    "note": "Image text localized into English; source artwork and layout retained."
+  },
+  "/map-preview/curated/rainy-arcade-04.webp": {
+    "src": "/portfolio/localized/en/rainy-main-4.png",
+    "status": "translated",
+    "note": "Image text localized into English; source artwork and layout retained."
+  },
+  "/portfolio/rainy-arcade-overview.png": {
+    "src": "/portfolio/localized/en/rainy-extra-0.png",
+    "status": "translated",
+    "note": "Image text localized into English; source artwork and layout retained."
+  },
+  "/portfolio/rainy-arcade-character-turnarounds.png": {
+    "src": "/portfolio/localized/en/rainy-extra-1.png",
+    "status": "translated",
+    "note": "Image text localized into English; source artwork and layout retained."
+  },
+  "/portfolio/rainy-arcade-library-city.png": {
+    "src": "/portfolio/localized/en/rainy-extra-2.png",
+    "status": "translated",
+    "note": "Image text localized into English; source artwork and layout retained."
+  },
+  "/portfolio/rainy-arcade-framed-01.png": {
+    "src": "/portfolio/localized/en/rainy-extra-3.png",
+    "status": "translated",
+    "note": "Image text localized into English; source artwork and layout retained."
+  },
+  "/portfolio/rainy-arcade-framed-02.png": {
+    "src": "/portfolio/localized/en/rainy-extra-4.png",
+    "status": "translated",
+    "note": "Image text localized into English; source artwork and layout retained."
+  },
+  "/portfolio/rainy-arcade-framed-03.png": {
+    "src": "/portfolio/localized/en/rainy-extra-5.png",
+    "status": "translated",
+    "note": "Image text localized into English; source artwork and layout retained."
+  },
+  "/map-preview/curated/auto-tune-01.webp": {
+    "src": "/portfolio/localized/en/auto-0.png",
+    "status": "translated",
+    "note": "Image text localized into English; source artwork and layout retained."
+  },
+  "/map-preview/curated/auto-tune-02.webp": {
+    "src": "/portfolio/localized/en/auto-1.png",
+    "status": "translated",
+    "note": "Image text localized into English; source artwork and layout retained."
+  },
+  "/map-preview/curated/auto-tune-03.webp": {
+    "src": "/portfolio/localized/en/auto-2.png",
+    "status": "translated",
+    "note": "Image text localized into English; source artwork and layout retained."
+  },
+  "/portfolio/rainy-arcade-concept-cover.png": {
+    "src": "/portfolio/localized/en/rainy-main-0.png",
+    "status": "translated",
+    "note": "Image text localized into English; source artwork and layout retained."
+  },
+  "/portfolio/rainy-arcade-character-ensemble.png": {
+    "src": "/portfolio/rainy-arcade-character-ensemble.png",
+    "status": "unchanged",
+    "note": "Reviewed: character illustration contains no text."
+  },
+  "/map-preview/concepts/auto-tune-detail.webp": {
+    "src": "/map-preview/concepts/auto-tune-detail.webp",
+    "status": "unchanged",
+    "note": "Reviewed: concept illustration already uses English; no Chinese text."
+  },
+  "/map-preview/concepts/literature-research-assistant-detail.webp": {
+    "src": "/map-preview/concepts/literature-research-assistant-detail.webp",
+    "status": "unchanged",
+    "note": "Reviewed: concept illustration already uses English; no Chinese text."
+  },
+  "/map-preview/gallery/literature-installed.webp": {
+    "src": "/portfolio/localized/en/study-0.png",
+    "status": "translated",
+    "note": "Full image text translated; English translation edition, with original layout and source evidence preserved."
+  },
+  "/map-preview/curated/study-assistant-01.webp": {
+    "src": "/portfolio/localized/en/study-1.png",
+    "status": "translated",
+    "note": "Full image text translated; English translation edition, with original layout and source evidence preserved."
+  },
+  "/map-preview/gallery/literature-reading-loop.webp": {
+    "src": "/portfolio/localized/en/study-2.png",
+    "status": "translated",
+    "note": "Full image text translated; English translation edition, with original layout and source evidence preserved."
+  },
+  "/map-preview/curated/study-assistant-02.webp": {
+    "src": "/portfolio/localized/en/study-3.png",
+    "status": "translated",
+    "note": "Full image text translated; English translation edition, with original layout and source evidence preserved."
+  },
+  "/map-preview/gallery/literature-saved-library.webp": {
+    "src": "/portfolio/localized/en/study-4.png",
+    "status": "translated",
+    "note": "Full image text translated; English translation edition, with original layout and source evidence preserved."
+  },
+  "/map-preview/gallery/literature-saved-notes.webp": {
+    "src": "/portfolio/localized/en/study-5.png",
+    "status": "translated",
+    "note": "Full image text translated; English translation edition, with original layout and source evidence preserved."
+  },
+  "/map-preview/curated/study-assistant-03.webp": {
+    "src": "/portfolio/localized/en/study-6.png",
+    "status": "translated",
+    "note": "Full image text translated; English translation edition, with original layout and source evidence preserved."
+  },
+  "/map-preview/curated/study-assistant-04.webp": {
+    "src": "/portfolio/localized/en/study-7.png",
+    "status": "translated",
+    "note": "Full image text translated; English translation edition, with original layout and source evidence preserved."
+  },
+  "/portfolio/rainy-arcade-interaction-flow.png": {
+    "src": "/portfolio/localized/en/rainy-main-4.png",
+    "status": "translated",
+    "note": "Corresponding original PNG of reviewed gallery image; shares English translation."
+  },
+  "/portfolio/rainy-arcade-block-city.png": {
+    "src": "/portfolio/localized/en/rainy-main-1.png",
+    "status": "translated",
+    "note": "Corresponding original PNG of reviewed gallery image; shares English translation."
+  },
+  "/portfolio/rainy-arcade-rain-city.png": {
+    "src": "/portfolio/localized/en/rainy-main-2.png",
+    "status": "translated",
+    "note": "Corresponding original PNG of reviewed gallery image; shares English translation."
+  },
+  "/portfolio/rainy-arcade-playtest-telemetry.png": {
+    "src": "/portfolio/localized/en/rainy-main-3.png",
+    "status": "translated",
+    "note": "Corresponding original PNG of reviewed gallery image; shares English translation."
+  },
+  "/portfolio/auto-tune-control-panel.png": {
+    "src": "/portfolio/localized/en/auto-0.png",
+    "status": "translated",
+    "note": "Corresponding original PNG of reviewed gallery image; shares English translation."
+  },
+  "/portfolio/auto-tune-adapters.png": {
+    "src": "/portfolio/localized/en/auto-1.png",
+    "status": "translated",
+    "note": "Corresponding original PNG of reviewed gallery image; shares English translation."
+  },
+  "/portfolio/auto-tune-x-reply.png": {
+    "src": "/portfolio/localized/en/auto-2.png",
+    "status": "translated",
+    "note": "Corresponding original PNG of reviewed gallery image; shares English translation."
+  },
+  "/portfolio/literature-installed.png": {
+    "src": "/portfolio/localized/en/study-0.png",
+    "status": "translated",
+    "note": "Corresponding original PNG of reviewed gallery image; shares English translation."
+  },
+  "/portfolio/literature-workspace.png": {
+    "src": "/portfolio/localized/en/study-1.png",
+    "status": "translated",
+    "note": "Corresponding original PNG of reviewed gallery image; shares English translation."
+  },
+  "/portfolio/literature-reading-loop.png": {
+    "src": "/portfolio/localized/en/study-2.png",
+    "status": "translated",
+    "note": "Corresponding original PNG of reviewed gallery image; shares English translation."
+  },
+  "/portfolio/literature-search.png": {
+    "src": "/portfolio/localized/en/study-3.png",
+    "status": "translated",
+    "note": "Corresponding original PNG of reviewed gallery image; shares English translation."
+  },
+  "/portfolio/literature-saved-library.png": {
+    "src": "/portfolio/localized/en/study-4.png",
+    "status": "translated",
+    "note": "Corresponding original PNG of reviewed gallery image; shares English translation."
+  },
+  "/portfolio/literature-saved-notes.png": {
+    "src": "/portfolio/localized/en/study-5.png",
+    "status": "translated",
+    "note": "Corresponding original PNG of reviewed gallery image; shares English translation."
+  },
+  "/portfolio/literature-translation-highlight.png": {
+    "src": "/portfolio/localized/en/study-6.png",
+    "status": "translated",
+    "note": "Corresponding original PNG of reviewed gallery image; shares English translation."
+  },
+  "/portfolio/literature-mind-map.png": {
+    "src": "/portfolio/localized/en/study-7.png",
+    "status": "translated",
+    "note": "Corresponding original PNG of reviewed gallery image; shares English translation."
+  },
+  "/map-preview/concepts/rainy-arcade-card.webp": {
+    "src": "/portfolio/localized/en/rainy-main-0.png",
+    "status": "translated",
+    "note": "Image text localized into English; source artwork and layout retained."
+  },
+  "/map-preview/concepts/auto-tune-card.webp": {
+    "src": "/map-preview/concepts/auto-tune-detail.webp",
+    "status": "unchanged",
+    "note": "Reviewed: concept illustration already uses English; no Chinese text."
+  },
+  "/map-preview/concepts/literature-research-assistant-card.webp": {
+    "src": "/map-preview/concepts/literature-research-assistant-detail.webp",
+    "status": "unchanged",
+    "note": "Reviewed: concept illustration already uses English; no Chinese text."
+  },
+  "/tutorial/rhythm-before-1.png": {
+    "src": "/portfolio/localized/en/tutorial-rhythm-before-1.png",
+    "status": "translated",
+    "note": "Real English /play capture at 1600×900, original note timing and lane 1 preserved. Captured through Playwright with the approved English project illustration and gameplay backdrop loaded through local request routing. English UI and the correct approach/judgment note positions visually checked; only the intentional Chinese-language switch label remains. Chinese originals retained."
+  },
+  "/tutorial/rhythm-frame-1.png": {
+    "src": "/portfolio/localized/en/tutorial-rhythm-frame-1.png",
+    "status": "translated",
+    "note": "Real English /play capture at 1600×900, original note timing and lane 1 preserved. Captured through Playwright with the approved English project illustration and gameplay backdrop loaded through local request routing. English UI and the correct approach/judgment note positions visually checked; only the intentional Chinese-language switch label remains. Chinese originals retained."
+  },
+  "/tutorial/rhythm-before-2.png": {
+    "src": "/portfolio/localized/en/tutorial-rhythm-before-2.png",
+    "status": "translated",
+    "note": "Real English /play capture at 1600×900, original note timing and lane 2 preserved. Captured through Playwright with the approved English project illustration and gameplay backdrop loaded through local request routing. English UI and the correct approach/judgment note positions visually checked; only the intentional Chinese-language switch label remains. Chinese originals retained."
+  },
+  "/tutorial/rhythm-frame-2.png": {
+    "src": "/portfolio/localized/en/tutorial-rhythm-frame-2.png",
+    "status": "translated",
+    "note": "Real English /play capture at 1600×900, original note timing and lane 2 preserved. Captured through Playwright with the approved English project illustration and gameplay backdrop loaded through local request routing. English UI and the correct approach/judgment note positions visually checked; only the intentional Chinese-language switch label remains. Chinese originals retained."
+  },
+  "/tutorial/rhythm-before-3.png": {
+    "src": "/portfolio/localized/en/tutorial-rhythm-before-3.png",
+    "status": "translated",
+    "note": "Real English /play capture at 1600×900, original note timing and lane 3 preserved. Captured through Playwright with the approved English project illustration and gameplay backdrop loaded through local request routing. English UI and the correct approach/judgment note positions visually checked; only the intentional Chinese-language switch label remains. Chinese originals retained."
+  },
+  "/tutorial/rhythm-frame-3.png": {
+    "src": "/portfolio/localized/en/tutorial-rhythm-frame-3.png",
+    "status": "translated",
+    "note": "Real English /play capture at 1600×900, original note timing and lane 3 preserved. Captured through Playwright with the approved English project illustration and gameplay backdrop loaded through local request routing. English UI and the correct approach/judgment note positions visually checked; only the intentional Chinese-language switch label remains. Chinese originals retained."
+  },
+  "/tutorial/rhythm-before-4.png": {
+    "src": "/portfolio/localized/en/tutorial-rhythm-before-4.png",
+    "status": "translated",
+    "note": "Real English /play capture at 1600×900, original note timing and lane 4 preserved. Captured through Playwright with the approved English project illustration and gameplay backdrop loaded through local request routing. English UI and the correct approach/judgment note positions visually checked; only the intentional Chinese-language switch label remains. Chinese originals retained."
+  },
+  "/tutorial/rhythm-frame-4.png": {
+    "src": "/portfolio/localized/en/tutorial-rhythm-frame-4.png",
+    "status": "translated",
+    "note": "Real English /play capture at 1600×900, original note timing and lane 4 preserved. Captured through Playwright with the approved English project illustration and gameplay backdrop loaded through local request routing. English UI and the correct approach/judgment note positions visually checked; only the intentional Chinese-language switch label remains. Chinese originals retained."
+  },
+  "/tutorial/rhythm-before-5.png": {
+    "src": "/portfolio/localized/en/tutorial-rhythm-before-5.png",
+    "status": "translated",
+    "note": "Real English /play capture at 1600×900, original note timing and lane 5 preserved. Captured through Playwright with the approved English project illustration and gameplay backdrop loaded through local request routing. English UI and the correct approach/judgment note positions visually checked; only the intentional Chinese-language switch label remains. Chinese originals retained."
+  },
+  "/tutorial/rhythm-frame-5.png": {
+    "src": "/portfolio/localized/en/tutorial-rhythm-frame-5.png",
+    "status": "translated",
+    "note": "Real English /play capture at 1600×900, original note timing and lane 5 preserved. Captured through Playwright with the approved English project illustration and gameplay backdrop loaded through local request routing. English UI and the correct approach/judgment note positions visually checked; only the intentional Chinese-language switch label remains. Chinese originals retained."
+  }
+}

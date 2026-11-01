@@ -2,7 +2,9 @@
 
 import Image from "@/components/portfolio/LocalizedImage";
 import Link from "next/link";
-import MapTeleportReport from "@/components/portfolio/MapTeleportReport";
+import dynamic from "next/dynamic";
+import MapScenery from "@/components/portfolio/MapScenery";
+import mapVisuals from "@/data/mapVisuals.json";
 import { LanguageSwitch } from "@/components/accessibility/LanguageSwitch";
 import { useEffect, useRef, useState, type CSSProperties } from "react";
 import { projects } from "@/data/projects";
@@ -17,10 +19,12 @@ import "./capture.css";
 import "./encounter.css";
 import "./atmosphere.css";
 import "./survival-log.css";
-import SurvivalLogCase from "./SurvivalLogCase";
-import PixelWorldReport from "./PixelWorldReport";
-import PixelWorldReportEnglish from "./PixelWorldReportEnglish";
 import "./pixel-report.css";
+
+const MapTeleportReport = dynamic(() => import("@/components/portfolio/MapTeleportReport"));
+const SurvivalLogCase = dynamic(() => import("./SurvivalLogCase"));
+const PixelWorldReport = dynamic(() => import("./PixelWorldReport"));
+const PixelWorldReportEnglish = dynamic(() => import("./PixelWorldReportEnglish"));
 
 type MenuView = "index" | "about" | "contact";
 type CapturePoint = { key: number; x: number; y: number; throwX: number; throwY: number; midX: number; midY: number; hit: boolean; target?: Encounter };
@@ -45,14 +49,14 @@ function randomSpawnPoint(occupied: SpawnPoint[]): SpawnPoint | null {
   return candidates[Math.floor(Math.random() * Math.min(6, candidates.length))]?.point || null;
 }
 const creatureImages: Record<string, string> = {
-  "survival-log": "/map-preview/survival-log-turtle-poses.png",
-  "pixel-world": "/map-preview/pixel-world-creature-concept-01.png",
-  preservative: "/map-preview/preservative-creature.png",
-  "rainy-arcade": "/map-preview/rainy-night-arcade-creature.png",
-  iwbtz: "/map-preview/iwbtz-creature.png",
-  "auto-tune": "/map-preview/auto-tune-creature.png",
-  "study-assistant": "/map-preview/literature-research-assistant-creature.png",
-  "map-teleport": "/map-preview/map-teleport-creature.png",
+  "survival-log": mapVisuals.turtle,
+  "pixel-world": mapVisuals.creatures["pixel-world"],
+  preservative: mapVisuals.creatures["preservative"],
+  "rainy-arcade": mapVisuals.creatures["rainy-arcade"],
+  iwbtz: mapVisuals.creatures["iwbtz"],
+  "auto-tune": mapVisuals.creatures["auto-tune"],
+  "study-assistant": mapVisuals.creatures["study-assistant"],
+  "map-teleport": mapVisuals.creatures["map-teleport"],
 };
 
 const conceptName = (id: string) => id === "study-assistant" ? "literature-research-assistant" : id;
@@ -137,6 +141,22 @@ function formatLocalTime(value: Date) {
   return [value.getHours(), value.getMinutes(), value.getSeconds()]
     .map((part) => String(part).padStart(2, "0"))
     .join(":");
+}
+
+function MapClock({ locale }: { locale: "zh" | "en" }) {
+  const [localTime, setLocalTime] = useState<Date | null>(null);
+  useEffect(() => {
+    const update = () => { if (!document.hidden) setLocalTime(new Date()); };
+    update();
+    const timer = window.setInterval(update, 1000);
+    document.addEventListener("visibilitychange", update);
+    return () => { window.clearInterval(timer); document.removeEventListener("visibilitychange", update); };
+  }, []);
+  return (<time className="map-preview__clock" dateTime={localTime?.toISOString()}>
+            <span>{locale === "zh" ? "本地时间" : "LOCAL TIME"}</span>
+            <strong>{localTime ? formatLocalDate(localTime, locale) : "----.--.--"}</strong>
+            <b>{localTime ? formatLocalTime(localTime) : "--:--:--"}</b>
+          </time>);
 }
 
 function NineDots({ size = 30 }: { size?: number }) {
@@ -227,12 +247,11 @@ export default function MapPreviewPage() {
   const stageRef = useRef<HTMLElement>(null);
   const pointerLightRef = useRef<HTMLDivElement>(null);
   const pointerFrame = useRef<number | null>(null);
-  const pointerPosition = useRef<{ x: number; y: number; width: number; height: number } | null>(null);
+  const pointerPosition = useRef<{ clientX: number; clientY: number } | null>(null);
   const menuButtonRef = useRef<HTMLButtonElement>(null);
   const spawnKey = useRef(0);
   const [ready, setReady] = useState(false);
   const [fromDirectory, setFromDirectory] = useState(false);
-  const [localTime, setLocalTime] = useState<Date | null>(null);
   const [discoveredIds, setDiscoveredIds] = useState<string[]>([]);
   const [menuOpen, setMenuOpen] = useState(false);
   const [menuView, setMenuView] = useState<MenuView>("index");
@@ -280,25 +299,14 @@ export default function MapPreviewPage() {
   }, []);
 
   useEffect(() => {
-    if (!ready) return;
-    for (const project of projects) {
-      const image = new window.Image();
-      image.src = conceptCard(project.id);
-    }
-  }, [ready]);
-
-  useEffect(() => {
     const hovered = encounters.find((item) => item.key === hoveredKey);
     if (!hovered) return;
     const image = new window.Image();
-    image.src = conceptDetail(hovered.projectId);
+    image.src = conceptCard(hovered.projectId);
   }, [hoveredKey, encounters]);
 
   useEffect(() => {
-    const introTimer = window.setTimeout(() => setReady(true), 1450);
-    const updateTime = () => setLocalTime(new Date());
-    updateTime();
-    const clockTimer = window.setInterval(updateTime, 1000);
+    const introTimer = window.setTimeout(() => setReady(true), 250);
 
     const validIds = new Set<string>(projects.map((project) => project.id));
     try {
@@ -323,7 +331,6 @@ export default function MapPreviewPage() {
 
     return () => {
       window.clearTimeout(introTimer);
-      window.clearInterval(clockTimer);
       window.removeEventListener("portfolio:project-discovered", handleDiscovery);
       if (pointerFrame.current !== null) window.cancelAnimationFrame(pointerFrame.current);
     };
@@ -510,19 +517,18 @@ export default function MapPreviewPage() {
   };
 
   const movePointer = (event: React.PointerEvent<HTMLElement>) => {
-    if (event.pointerType === "touch" || menuOpen) return;
-    const bounds = event.currentTarget.getBoundingClientRect();
-    const x = event.clientX - bounds.left;
-    const y = event.clientY - bounds.top;
-    pointerPosition.current = { x, y, width: bounds.width, height: bounds.height };
+    if (event.pointerType === "touch" || menuOpen || cardOpen || detailOpen || document.hidden || window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+    pointerPosition.current = { clientX: event.clientX, clientY: event.clientY };
     if (pointerFrame.current !== null) return;
     pointerFrame.current = window.requestAnimationFrame(() => {
       pointerFrame.current = null;
       const position = pointerPosition.current;
-      if (!position) return;
-      pointerLightRef.current?.style.setProperty("transform", `translate3d(${position.x - 250}px, ${position.y - 250}px, 0)`);
-      stageRef.current?.style.setProperty("--drift-x", (position.x / position.width - 0.5) * -14 + "px");
-      stageRef.current?.style.setProperty("--drift-y", (position.y / position.height - 0.5) * -10 + "px");
+      const bounds = stageRef.current?.getBoundingClientRect();
+      if (!position || !bounds?.width || !bounds.height) return;
+      const x = position.clientX - bounds.left, y = position.clientY - bounds.top;
+      pointerLightRef.current?.style.setProperty("transform", `translate3d(${x - 250}px, ${y - 250}px, 0)`);
+      stageRef.current?.style.setProperty("--drift-x", (x / bounds.width - 0.5) * -14 + "px");
+      stageRef.current?.style.setProperty("--drift-y", (y / bounds.height - 0.5) * -10 + "px");
     });
   };
 
@@ -551,7 +557,7 @@ export default function MapPreviewPage() {
   return (
     <main
       ref={stageRef}
-      className={"map-preview map-preview--immersive" + (ready ? " is-ready" : "") + (menuOpen ? " menu-open" : "")}
+      className={"map-preview map-preview--immersive" + (ready ? " is-ready" : "") + (menuOpen ? " menu-open" : "") + (cardOpen || detailOpen ? " map-obscured" : "")}
       onPointerMove={movePointer}
       onClick={clickMap}
       onKeyDown={keyMap}
@@ -569,7 +575,7 @@ export default function MapPreviewPage() {
           </filter>
         ))}
       </defs></svg>
-      <div className="map-preview__scene" aria-hidden="true" />
+      <div className="map-preview__scene" aria-hidden="true"><MapScenery /></div>
       <div className="map-preview__cloud-shadows" aria-hidden="true" />
       <div className="map-preview__water-shimmer" aria-hidden="true" />
       <div className="map-preview__color" aria-hidden="true" />
@@ -589,13 +595,14 @@ export default function MapPreviewPage() {
         <Link
           className="map-preview__rhythm-portal"
           href="/play"
+          prefetch={false}
           onClick={(event) => { event.stopPropagation(); setMode("entry"); }}
           aria-label={locale === "zh" ? "进入音游体验" : "Enter the rhythm experience"}
         >
           <span className="map-preview__rhythm-eggs" aria-hidden="true">
             {[1, 2, 3, 4, 5].map((egg) => (
               <span className={`map-preview__rhythm-egg map-preview__rhythm-egg--${egg}`} key={egg}>
-                <Image src="/map-preview/capture-egg.png" alt="" width={62} height={66} unoptimized />
+                <Image src={mapVisuals.egg} alt="" width={62} height={66} unoptimized />
               </span>
             ))}
           </span>
@@ -650,7 +657,7 @@ export default function MapPreviewPage() {
           <div className="capture-sequence__ring capture-sequence__ring--first" />
           <div className="capture-sequence__ring capture-sequence__ring--second" />
           <div className="capture-sequence__egg">
-            <Image src="/map-preview/capture-egg.png" alt="" width={110} height={118} unoptimized />
+            <Image src={mapVisuals.egg} alt="" width={110} height={118} unoptimized />
           </div>
           <div className="capture-sequence__star">✦</div>
           <div className="capture-sequence__sparks">{Array.from({ length: 8 }, (_, index) => <i key={index} />)}</div>
@@ -752,11 +759,7 @@ export default function MapPreviewPage() {
         <div className="map-preview__header-right">
           <Link href="/portfolio/" className="map-preview__directory-link">{locale === "zh" ? "作品目录 ↗" : "All projects ↗"}</Link>
           <LanguageSwitch inline theme="world" />
-          <time className="map-preview__clock" dateTime={localTime?.toISOString()}>
-            <span>{locale === "zh" ? "本地时间" : "LOCAL TIME"}</span>
-            <strong>{localTime ? formatLocalDate(localTime, locale) : "----.--.--"}</strong>
-            <b>{localTime ? formatLocalTime(localTime) : "--:--:--"}</b>
-          </time>
+          <MapClock locale={locale} />
           <button
             ref={menuButtonRef}
             className="map-preview__menu-trigger"

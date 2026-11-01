@@ -1,20 +1,22 @@
 "use client";
 import Link from "next/link";
+import dynamic from "next/dynamic";
 import { LanguageSwitch } from "@/components/accessibility/LanguageSwitch";
 import Image from "@/components/portfolio/LocalizedImage";
-import MapTeleportReport from "@/components/portfolio/MapTeleportReport";
 import { projects } from "@/data/projects";
 import { localizeProject } from "@/data/projectTranslations";
 import { mapTeleportWorkshops } from "@/data/mapTeleport";
 import { useUiStore } from "@/store/uiStore";
 import readingGallery from "@/data/readingGallery.json";
 import type { ProjectId } from "@/types";
-import PixelWorldReport from "../../map-preview/PixelWorldReport";
-import PixelWorldReportEnglish from "../../map-preview/PixelWorldReportEnglish";
-import SurvivalLogCase from "../../map-preview/SurvivalLogCase";
 import "../../map-preview/pixel-report.css";
 import "../../map-preview/survival-log.css";
 import "./reader.css";
+
+const MapTeleportReport = dynamic(() => import("@/components/portfolio/MapTeleportReport"));
+const PixelWorldReport = dynamic(() => import("../../map-preview/PixelWorldReport"));
+const PixelWorldReportEnglish = dynamic(() => import("../../map-preview/PixelWorldReportEnglish"));
+const SurvivalLogCase = dynamic(() => import("../../map-preview/SurvivalLogCase"));
 
 export default function ReportReader({ projectId }: { projectId: ProjectId }) {
   const locale = useUiStore(state => state.locale);

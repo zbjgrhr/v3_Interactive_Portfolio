@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "@/components/portfolio/LocalizedImage";
+import mapVisuals from "@/data/mapVisuals.json";
 import { usePathname, useRouter } from "next/navigation";
 import { useCallback, useEffect, useRef, useState } from "react";
 import { useUiStore } from "@/store/uiStore";
@@ -94,9 +95,9 @@ export function PortfolioTutorial() {
 
   useEffect(() => {
     if (step === null || finished) return;
-    let frame = 0;
     let scrolled = false;
     const update = () => {
+      if (document.hidden) return;
       const element = document.querySelector<HTMLElement>(steps[step].selector);
       if (element) {
         const rect = element.getBoundingClientRect();
@@ -110,10 +111,20 @@ export function PortfolioTutorial() {
           setTarget((old) => old && Math.abs(old.x - x) < 1 && Math.abs(old.y - y) < 1 && Math.abs(old.width - rect.width) < 1 ? old : { left: rect.left, top: rect.top, width: rect.width, height: rect.height, x, y });
         } else setTarget(null);
       } else setTarget(null);
-      frame = window.requestAnimationFrame(update);
     };
-    frame = window.requestAnimationFrame(update);
-    return () => window.cancelAnimationFrame(frame);
+    update();
+    const timer = window.setInterval(update, 60);
+    return () => window.clearInterval(timer);
+  }, [finished, rhythmFrame, step]);
+
+  useEffect(() => {
+    if (step !== 6 || finished || rhythmFrame >= mapVisuals.tutorial.frames.length - 1) return;
+    // Warm only the next pair after the user actually reaches the keyboard guide.
+    for (const src of [mapVisuals.tutorial.frames[rhythmFrame + 1], mapVisuals.tutorial.before[rhythmFrame + 1]]) {
+      const image = new window.Image();
+      image.fetchPriority = "low";
+      image.src = src;
+    }
   }, [finished, rhythmFrame, step]);
 
   const endTutorial = useCallback(() => {
@@ -169,10 +180,10 @@ export function PortfolioTutorial() {
       {showingRhythm && (
         <div className="portfolio-tutorial__rhythm-stage" aria-hidden="true">
           <div className="portfolio-tutorial__rhythm-screen">
-            <Image src={`/tutorial/rhythm-frame-${rhythmFrame + 1}.png?v=real-notes`} alt="" fill sizes="100vw" unoptimized priority />
+            <Image src={mapVisuals.tutorial.frames[rhythmFrame]} alt="" fill sizes="100vw" unoptimized priority />
             {step === 6 && (
               <>
-                <Image key={`before-${rhythmFrame}`} className="portfolio-tutorial__rhythm-before" src={`/tutorial/rhythm-before-${rhythmFrame + 1}.png?v=real-notes`} alt="" fill sizes="100vw" unoptimized priority />
+                <Image key={`before-${rhythmFrame}`} className="portfolio-tutorial__rhythm-before" src={mapVisuals.tutorial.before[rhythmFrame]} alt="" fill sizes="100vw" unoptimized priority />
                 <span key={`key-${rhythmFrame}`} className={`portfolio-tutorial__rhythm-key portfolio-tutorial__rhythm-key--active ${rhythmFrame === 2 ? "portfolio-tutorial__rhythm-key--space" : ""}`} style={{ left: `${keyX[rhythmFrame]}%` }} />
               </>
             )}

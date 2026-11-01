@@ -1,0 +1,1 @@
+.map-scenery{position:absolute;inset:0;display:block;pointer-events:none}.map-scenery__image{display:block;width:100%;height:100%;object-fit:cover;object-position:var(--map-position,center)}

@@ -57,3 +57,17 @@
 .project-detail--map-teleport-review .project-detail__action{background:linear-gradient(135deg,#263a2ded,#202d28ed);color:#edc17f;border-color:#bd9a5f;box-shadow:0 5px 16px #09130f55,inset 0 1px #d1bd8140}
 .project-detail--map-teleport-review .project-detail__action--primary{background:linear-gradient(120deg,#725b31ed,#344332ed)}
 .project-detail--map-teleport-review .project-detail__action:hover{background:linear-gradient(135deg,#435438,#65522e);color:#f4dfb4}
+
+/* Keep the atmosphere, without repainting a filtered full-screen map each frame. */
+.map-preview__scene{animation:none;filter:none}
+.map-preview__cloud-shadows{filter:none}
+.map-preview.map-obscured .map-preview__scene,.map-preview.menu-open .map-preview__scene{will-change:auto}
+.map-preview.map-obscured :is(.map-preview__cloud-shadows,.map-preview__water-shimmer,.map-preview__sunlight,.map-preview__mist,.map-preview__glint),.map-preview.menu-open :is(.map-preview__cloud-shadows,.map-preview__water-shimmer,.map-preview__sunlight,.map-preview__mist,.map-preview__glint){animation-play-state:paused}
+@media(hover:none),(pointer:coarse){.map-preview__scene{transform:none;will-change:auto}.map-preview__pointer-light{display:none}.map-preview__cloud-shadows{inset:-10% -20%;mix-blend-mode:normal;opacity:.22}.map-preview__grain{display:none}}
+
+@keyframes map-sun-breathe{from{transform:rotate(-1deg) scale(1);opacity:.72}to{transform:rotate(2deg) scale(1.03);opacity:1}}
+.map-preview__water-shimmer{background:none;animation:none}
+.map-preview__water-shimmer::before{content:"";position:absolute;inset:-84px -210px;background:url('/map-preview/water-light-pattern.svg') repeat;background-size:210px 84px;animation:map-water-slide 8s linear infinite;will-change:transform}
+@keyframes map-water-slide{from{transform:translate3d(0,0,0)}to{transform:translate3d(210px,84px,0)}}
+.map-preview.map-obscured .map-preview__water-shimmer::before,.map-preview.menu-open .map-preview__water-shimmer::before{animation-play-state:paused}
+@media(prefers-reduced-motion:reduce){.map-preview__water-shimmer::before{animation:none;will-change:auto}}

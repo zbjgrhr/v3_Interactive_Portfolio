@@ -1,0 +1,35 @@
+{
+  "world": {
+    "desktop": "/map-preview/optimized/world-1672.f333625500.webp",
+    "mobile": "/map-preview/optimized/world-960.7b13f9bd16.webp",
+    "placeholder": "data:image/webp;base64,UklGRroCAABXRUJQVlA4IK4CAACwDACdASpAACQAPu1co06ppSMiNUgBMB2JbACdMs/U0y864fjioqBK+6zE6ytN0WG9/6LqlckxqlodDmopBSUpI1FTMprCRbLVTS1WF6QdlfnD+hntwKGHSMhtq1ev2OYkPZeaJV60z+MX4WfwQAD+aINlPL7w7OrlBGMIJBAbR7WUYQNzqsEEHP1qOiUwla6bmMivhS7Q+syaZBi9GVGdemE6fWPQJtAI67bVd+PloDbtK5w16ZVvPCyMKNFnKNCQocSssoiGBEJRdg7xNo2BVhTHJu8t53ieg6BUQ5jAymF6WCYu4fDCsyhFix5VOJ0CT67LxUJSNTvW+6mxsD34ysR18V2nD58INaoUcdkG5v9x/O7GOtyAvvayilAgDM/SE62MsexzC2Z+Udr1fMLuFcXr7FRQSTTHEQ4tS5+zQJ10YlyTZUcFRE+fTiXlfXTReCkK2fvVoi+2LfZNa4D+Z3k1vFwn/eNrxYA1qJD/omDpkoXEC93moBVv2dyj0RD5zpCBuxAr6cF1dwC1nWGI5mSDP0zbddVGADW+dYJUbpvJ+Xr0HsX1zdX0Fv0VtBFWWYyip2uwS69tgJL37ndVD4ZGajw1w8kWJuSIVJ9XXvP5zGEWNw201cYwWY4OsfDZun769plVc2eEvv+CSUY8+o5HYiwTsFeK0fHfngHeTeQKW1eL0sZglV2KPhy3fIPSIEaE0ZK7NbDr0khHOj1H1FkDtJpHgKxSxOJDK4ciscdZFupKLnYgy/2xrfCbqDFicYpBIpw3jcHIGX0hWfQ7XSUc8OUmTmUnruvuaGZcnWTZP+IaJsKl5Z4SBQVPVZALHZspNsDDplVht5tJSPHrvK5Hf/UrTvJLO6vniqHXDNgaUM+na6C8TjLIUgfN4pdNhYCR3twKXdsMlwAAAA=="
+  },
+  "creatures": {
+    "pixel-world": "/map-preview/optimized/pixel-world.5667e9e8a2.webp",
+    "preservative": "/map-preview/optimized/preservative.26d34e3594.webp",
+    "rainy-arcade": "/map-preview/optimized/rainy-arcade.b436038471.webp",
+    "iwbtz": "/map-preview/optimized/iwbtz.ac7038724a.webp",
+    "auto-tune": "/map-preview/optimized/auto-tune.39c8dfece1.webp",
+    "study-assistant": "/map-preview/optimized/study-assistant.949e167c2a.webp",
+    "map-teleport": "/map-preview/optimized/map-teleport.dae9e3bd19.webp"
+  },
+  "turtle": "/map-preview/optimized/turtle-poses.5b9f76adee.webp",
+  "egg": "/map-preview/optimized/capture-egg.085e932918.webp",
+  "tutorial": {
+    "frames": [
+      "/map-preview/optimized/rhythm-frame-1.10b2928543.webp",
+      "/map-preview/optimized/rhythm-frame-2.91c7fa2c27.webp",
+      "/map-preview/optimized/rhythm-frame-3.1c9a829337.webp",
+      "/map-preview/optimized/rhythm-frame-4.681e696c2c.webp",
+      "/map-preview/optimized/rhythm-frame-5.0e064fa638.webp"
+    ],
+    "before": [
+      "/map-preview/optimized/rhythm-before-1.1794541df8.webp",
+      "/map-preview/optimized/rhythm-before-2.0250506fc8.webp",
+      "/map-preview/optimized/rhythm-before-3.ba930e20a2.webp",
+      "/map-preview/optimized/rhythm-before-4.628ebc0a57.webp",
+      "/map-preview/optimized/rhythm-before-5.12d6f71d4c.webp"
+    ]
+  },
+  "turtleWalk": "/map-preview/optimized/turtle-walk.b5b752bb21.webp"
+}

@@ -3,7 +3,7 @@
 .portfolio-entry__identity span:last-child{color:#687076;font:11px/1.5 "Courier New",monospace;letter-spacing:.16em}
 .portfolio-entry__path{position:relative;display:flex;align-items:center;min-height:100svh;padding:112px clamp(28px,5vw,90px);overflow:hidden;color:inherit;text-decoration:none;isolation:isolate}
 .portfolio-entry__path--world{color:#fff7e4;background:#143349}
-.portfolio-entry__scenery{position:absolute;z-index:-1;inset:0;background:linear-gradient(180deg,rgba(11,29,46,.12),rgba(8,25,43,.43) 45%,rgba(7,24,41,.8)),url('/map-preview/world-original.png') 27% center/cover;transition:transform 1s cubic-bezier(.2,.7,.2,1)}
+.portfolio-entry__scenery{position:absolute;z-index:-1;inset:0;--map-position:27% center;background:#143349 url("data:image/webp;base64,UklGRroCAABXRUJQVlA4IK4CAACwDACdASpAACQAPu1co06ppSMiNUgBMB2JbACdMs/U0y864fjioqBK+6zE6ytN0WG9/6LqlckxqlodDmopBSUpI1FTMprCRbLVTS1WF6QdlfnD+hntwKGHSMhtq1ev2OYkPZeaJV60z+MX4WfwQAD+aINlPL7w7OrlBGMIJBAbR7WUYQNzqsEEHP1qOiUwla6bmMivhS7Q+syaZBi9GVGdemE6fWPQJtAI67bVd+PloDbtK5w16ZVvPCyMKNFnKNCQocSssoiGBEJRdg7xNo2BVhTHJu8t53ieg6BUQ5jAymF6WCYu4fDCsyhFix5VOJ0CT67LxUJSNTvW+6mxsD34ysR18V2nD58INaoUcdkG5v9x/O7GOtyAvvayilAgDM/SE62MsexzC2Z+Udr1fMLuFcXr7FRQSTTHEQ4tS5+zQJ10YlyTZUcFRE+fTiXlfXTReCkK2fvVoi+2LfZNa4D+Z3k1vFwn/eNrxYA1qJD/omDpkoXEC93moBVv2dyj0RD5zpCBuxAr6cF1dwC1nWGI5mSDP0zbddVGADW+dYJUbpvJ+Xr0HsX1zdX0Fv0VtBFWWYyip2uwS69tgJL37ndVD4ZGajw1w8kWJuSIVJ9XXvP5zGEWNw201cYwWY4OsfDZun769plVc2eEvv+CSUY8+o5HYiwTsFeK0fHfngHeTeQKW1eL0sZglV2KPhy3fIPSIEaE0ZK7NbDr0khHOj1H1FkDtJpHgKxSxOJDK4ciscdZFupKLnYgy/2xrfCbqDFicYpBIpw3jcHIGX0hWfQ7XSUc8OUmTmUnruvuaGZcnWTZP+IaJsKl5Z4SBQVPVZALHZspNsDDplVht5tJSPHrvK5Hf/UrTvJLO6vniqHXDNgaUM+na6C8TjLIUgfN4pdNhYCR3twKXdsMlwAAAA==") 27% center/cover;transition:transform 1s cubic-bezier(.2,.7,.2,1)}
 .portfolio-entry__path--world:hover .portfolio-entry__scenery{transform:scale(1.035)}
 .portfolio-entry .portfolio-entry__path--world:hover{color:#e4c4ad}
 .portfolio-entry .portfolio-entry__path--direct:hover{color:#704b36}
@@ -30,3 +30,5 @@
 .portfolio-entry__path--direct .portfolio-entry__index{font-size:110px;color:#b8a37c55;top:-15px}
 .portfolio-entry__path--direct .portfolio-entry__button{background:transparent;color:#27342d;border-color:#9b8b6d;border-radius:0}
 @media(max-width:700px){.portfolio-entry__path--direct:before{inset:22px 26px 43px}.portfolio-entry__path--direct .portfolio-entry__index{font-size:65px;top:-6px}}
+
+.portfolio-entry__scenery::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(11,29,46,.12),rgba(8,25,43,.43) 45%,rgba(7,24,41,.8));pointer-events:none}

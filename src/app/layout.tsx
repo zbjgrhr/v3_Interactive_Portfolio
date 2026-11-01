@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { LocaleBootstrap } from "@/components/accessibility/LocaleBootstrap";
 import { LanguageSwitch } from "@/components/accessibility/LanguageSwitch";
 import "./language-switch.css";
-import { PortfolioTutorial } from "@/components/tutorial/PortfolioTutorial";
+import { TutorialGate } from "@/components/tutorial/TutorialGate";
 import "./globals.css";
 import "./game-v2.css";
 import "./explore-watercolor.css";
@@ -35,7 +35,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body><LocaleBootstrap />{children}<PortfolioTutorial /><LanguageSwitch /></body>
+      <body><LocaleBootstrap />{children}<TutorialGate /><LanguageSwitch /></body>
     </html>
   );
 }

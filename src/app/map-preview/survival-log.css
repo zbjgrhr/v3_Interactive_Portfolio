@@ -24,7 +24,7 @@
 .survival-case__plans{border-top:1px dashed #9a8e67;padding-top:36px}.survival-case__plans p{color:#c9c5b5}
 .map-preview__creature--survival-log{width:clamp(150px,12vw,210px)}
 .creature-art--survival-log{animation:supply-turtle-walk 2.8s ease-in-out infinite}
-.supply-turtle{position:absolute;inset:14% 0;display:block;background-image:url('/map-preview/survival-log-turtle-walk.png');background-size:200% 100%;background-repeat:no-repeat;animation:supply-turtle-frame 2.8s steps(1,end) infinite}
+.supply-turtle{position:absolute;inset:14% 0;display:block;background-image:url('/map-preview/optimized/turtle-walk.b5b752bb21.webp');background-size:200% 100%;background-repeat:no-repeat;animation:supply-turtle-frame 2.8s steps(1,end) infinite}
 .supply-turtle--extended{background-position:left center}.supply-turtle--retracted{background-position:right center;animation-name:supply-turtle-frame-retracted}
 @keyframes supply-turtle-frame{0%,38%,76%,100%{opacity:1}46%,68%{opacity:0}}@keyframes supply-turtle-frame-retracted{0%,38%,76%,100%{opacity:0}46%,68%{opacity:1}}@keyframes supply-turtle-walk{0%,100%{transform:translateX(-3px)}40%{transform:translateX(2px) translateY(-2px)}65%{transform:translateX(3px) translateY(2px)}}
 .map-preview__creature:hover .supply-turtle,.map-preview__creature:focus-visible .supply-turtle{animation-play-state:paused}

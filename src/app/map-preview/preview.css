@@ -34,7 +34,7 @@
 .map-preview__scene {
   position: absolute;
   inset: -2%;
-  background: url("/map-preview/world-original.png") center center / cover no-repeat;
+  background: #719ba0 url("data:image/webp;base64,UklGRroCAABXRUJQVlA4IK4CAACwDACdASpAACQAPu1co06ppSMiNUgBMB2JbACdMs/U0y864fjioqBK+6zE6ytN0WG9/6LqlckxqlodDmopBSUpI1FTMprCRbLVTS1WF6QdlfnD+hntwKGHSMhtq1ev2OYkPZeaJV60z+MX4WfwQAD+aINlPL7w7OrlBGMIJBAbR7WUYQNzqsEEHP1qOiUwla6bmMivhS7Q+syaZBi9GVGdemE6fWPQJtAI67bVd+PloDbtK5w16ZVvPCyMKNFnKNCQocSssoiGBEJRdg7xNo2BVhTHJu8t53ieg6BUQ5jAymF6WCYu4fDCsyhFix5VOJ0CT67LxUJSNTvW+6mxsD34ysR18V2nD58INaoUcdkG5v9x/O7GOtyAvvayilAgDM/SE62MsexzC2Z+Udr1fMLuFcXr7FRQSTTHEQ4tS5+zQJ10YlyTZUcFRE+fTiXlfXTReCkK2fvVoi+2LfZNa4D+Z3k1vFwn/eNrxYA1qJD/omDpkoXEC93moBVv2dyj0RD5zpCBuxAr6cF1dwC1nWGI5mSDP0zbddVGADW+dYJUbpvJ+Xr0HsX1zdX0Fv0VtBFWWYyip2uwS69tgJL37ndVD4ZGajw1w8kWJuSIVJ9XXvP5zGEWNw201cYwWY4OsfDZun769plVc2eEvv+CSUY8+o5HYiwTsFeK0fHfngHeTeQKW1eL0sZglV2KPhy3fIPSIEaE0ZK7NbDr0khHOj1H1FkDtJpHgKxSxOJDK4ciscdZFupKLnYgy/2xrfCbqDFicYpBIpw3jcHIGX0hWfQ7XSUc8OUmTmUnruvuaGZcnWTZP+IaJsKl5Z4SBQVPVZALHZspNsDDplVht5tJSPHrvK5Hf/UrTvJLO6vniqHXDNgaUM+na6C8TjLIUgfN4pdNhYCR3twKXdsMlwAAAA==") center center / cover no-repeat;
   transform: translate3d(var(--drift-x), var(--drift-y), 0) scale(1.015);
   transition: transform .18s ease-out;
   will-change: transform;

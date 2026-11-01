@@ -1,0 +1,27 @@
+{
+  "preservative": [
+    "/portfolio/preservative-01-concept-approved.png",
+    "/portfolio/preservative-02-campaign.png",
+    "/portfolio/preservative-03-visual-identity.png",
+    "/portfolio/preservative-04-gameplay-evidence.png",
+    "/portfolio/preservative-02-workshop.png",
+    "/portfolio/preservative-02-report-evidence.png",
+    "/portfolio/preservative-02-branded.gif",
+    "/portfolio/preservative-02-ingame.gif"
+  ],
+  "rainy-arcade": [
+    "/portfolio/rainy-arcade-concept-cover.png",
+    "/portfolio/rainy-arcade-overview.png",
+    "/portfolio/rainy-arcade-character-ensemble.png",
+    "/portfolio/rainy-arcade-character-turnarounds.png",
+    "/portfolio/rainy-arcade-library-city.png",
+    "/portfolio/rainy-arcade-framed-01.png",
+    "/portfolio/rainy-arcade-framed-02.png",
+    "/portfolio/rainy-arcade-framed-03.png"
+  ],
+  "iwbtz": [
+    "/portfolio/iwbtz-case-03-multi-attack.gif",
+    "/portfolio/iwbtz-case-04-core-loop.gif",
+    "/portfolio/iwbtz-case-05-boss-pattern.gif"
+  ]
+}

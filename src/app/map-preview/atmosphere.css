@@ -37,3 +37,23 @@
 .teleport-editions h2 { margin:0 0 10px;font-size:21px; }.teleport-editions p { margin:0 0 17px; }.teleport-editions>div { display:grid;grid-template-columns:1fr 1fr;gap:14px; }.teleport-editions a { padding:16px;color:#ffe2ad;border:1px solid rgba(235,201,144,.5);border-radius:8px;text-decoration:none;background:rgba(255,244,210,.06); }.teleport-editions a:hover { background:rgba(255,232,190,.14); }.teleport-editions small { display:block;color:#efe3ce;font-size:11px;margin-top:7px;overflow-wrap:anywhere; }
 @media(max-width:650px){.map-preview__creature--map-teleport{width:153px}.teleport-editions>div{grid-template-columns:1fr}.teleport-editions{padding:17px}.project-detail--map-teleport-review{background-attachment:scroll}}
 @media(prefers-reduced-motion:reduce){.map-preview__scene,.map-preview__cloud-shadows,.map-preview__water-shimmer,.map-preview__water-shimmer::after,.creature-art--map-teleport{animation:none}.map-preview__scene{filter:brightness(1.035) saturate(1.015)}.map-preview__cloud-shadows{opacity:.4}.map-preview__creature{transition:none}.map-preview__creature:hover,.map-preview__creature:focus-visible{scale:1}}
+
+/* Match the field-map report to the illustrated game scene. */
+.project-detail--map-teleport-review{background-image:linear-gradient(120deg,#24332a47,#352f244f),url('/map-preview/concepts/map-teleport-detail.webp')}
+.project-detail--map-teleport-review .project-detail__hero.teleport-report-opening>div{background:linear-gradient(135deg,#e9ddb94d,transparent 70%),url('/reading-paper.svg'),#d8d9bd;border-color:#939d74;border-top-color:#a38147;border-radius:3px 12px 3px 3px}
+.project-detail--map-teleport-review .project-detail__hero.teleport-report-opening span{color:#68623e}
+.project-detail--map-teleport-review .project-detail__hero.teleport-report-opening p{font-family:"Trebuchet MS","Microsoft YaHei","PingFang SC",sans-serif;color:#354332;line-height:1.9;letter-spacing:.025em}
+.project-detail--map-teleport-review .teleport-report-opening>a .teleport-report-opening__caption{background:#e3ddc8;color:#62674e}
+.project-detail--map-teleport-review .project-detail__action{background:linear-gradient(135deg,#364932ed,#4b503be6);border-color:#bca16a;color:#fff0cf;box-shadow:0 5px 16px #15231833,inset 0 1px #e6dab73d}
+.project-detail--map-teleport-review .project-detail__action--primary{background:linear-gradient(120deg,#75603ce8,#45553ee8)}
+.project-detail--map-teleport-review .project-detail__action:hover{background:linear-gradient(135deg,#465b3f,#655b3d)}
+
+/* The game entrance uses a night-map interface, distinct from the paper report. */
+.project-detail--map-teleport-review{background-image:linear-gradient(120deg,#101e17a1,#28291c78),url('/map-preview/concepts/map-teleport-detail.webp')}
+.project-detail--map-teleport-review .project-detail__hero.teleport-report-opening>div{background:radial-gradient(ellipse at 100% 0,#b8873226,transparent 65%),#202d28f5;border-color:#87907177;border-top-color:#c49b59;border-radius:2px 14px 2px 2px;box-shadow:0 16px 40px #09130f66}
+.project-detail--map-teleport-review .project-detail__hero.teleport-report-opening span{color:#edc17f}
+.project-detail--map-teleport-review .project-detail__hero.teleport-report-opening p{color:#e5dfcb;font-family:"Trebuchet MS","Microsoft YaHei",sans-serif;line-height:1.9}
+.project-detail--map-teleport-review .teleport-report-opening>a .teleport-report-opening__caption{background:#202d28;color:#bac1aa}
+.project-detail--map-teleport-review .project-detail__action{background:linear-gradient(135deg,#263a2ded,#202d28ed);color:#edc17f;border-color:#bd9a5f;box-shadow:0 5px 16px #09130f55,inset 0 1px #d1bd8140}
+.project-detail--map-teleport-review .project-detail__action--primary{background:linear-gradient(120deg,#725b31ed,#344332ed)}
+.project-detail--map-teleport-review .project-detail__action:hover{background:linear-gradient(135deg,#435438,#65522e);color:#f4dfb4}

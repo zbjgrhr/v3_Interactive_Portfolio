@@ -23,3 +23,10 @@
 .portfolio-entry__path:focus-visible{outline:4px solid #cfaa65;outline-offset:-6px}
 @media(max-width:700px){.portfolio-entry{grid-template-columns:1fr}.portfolio-entry__identity{top:22px;left:26px;right:26px}.portfolio-entry__identity span:last-child{color:#fff9e7}.portfolio-entry__path{min-height:50svh;padding:76px 28px 51px}.portfolio-entry__path--direct{padding-top:38px}.portfolio-entry__copy{max-width:none}.portfolio-entry h1,.portfolio-entry h2{font-size:clamp(30px,7.5vw,44px)}.portfolio-entry h1 br,.portfolio-entry h2 br{display:none}.portfolio-entry__eyebrow{margin-bottom:13px;font-size:10px}.portfolio-entry__copy p{max-width:none;margin:13px 0 19px;font-size:12px}.portfolio-entry__button{min-height:44px;padding:9px 17px;font-size:13px}.portfolio-entry__footnote{bottom:17px;left:28px;font-size:10px}.portfolio-entry__index{top:-9px;right:0;font-size:48px}}
 @media(prefers-reduced-motion:reduce){.portfolio-entry__scenery,.portfolio-entry__button{transition:none}}
+
+.portfolio-entry__path--direct{background:#eeece3 url('/reading-paper.svg');color:#27342d;border-left:1px solid #c2b598}
+.portfolio-entry__path--direct:before{content:"";position:absolute;inset:100px 34px 76px;border-top:1px solid #a89a7a66;border-bottom:1px solid #a89a7a66;pointer-events:none}
+.portfolio-entry__path--direct h2{font-family:Georgia,"Songti SC","SimSun",serif;font-weight:400;letter-spacing:.015em;line-height:1.35}
+.portfolio-entry__path--direct .portfolio-entry__index{font-size:110px;color:#b8a37c55;top:-15px}
+.portfolio-entry__path--direct .portfolio-entry__button{background:transparent;color:#27342d;border-color:#9b8b6d;border-radius:0}
+@media(max-width:700px){.portfolio-entry__path--direct:before{inset:22px 26px 43px}.portfolio-entry__path--direct .portfolio-entry__index{font-size:65px;top:-6px}}

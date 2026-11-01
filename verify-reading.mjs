@@ -1,0 +1,38 @@
+import { chromium } from 'playwright';
+import fs from 'node:fs';
+const out='../../outputs/map-report-implementation';fs.mkdirSync(out,{recursive:true});
+const browser=await chromium.launch({channel:'msedge',headless:true});
+const page=await browser.newPage({viewport:{width:1440,height:1000},deviceScaleFactor:1});
+const errors=[];page.on('pageerror',err=>errors.push(err.message));
+await page.goto('http://127.0.0.1:8789/',{waitUntil:'domcontentloaded'});
+await page.getByRole('button',{name:'切换为中文',exact:true}).click();
+await page.screenshot({path:out+'/entry-desktop.png'});
+await page.locator('.portfolio-entry__path--direct').click();await page.waitForLoadState('domcontentloaded');
+const routes=await page.locator('.work-directory__actions>a:first-child').evaluateAll(links=>links.map(a=>new URL(a.href).pathname));
+if(routes.length!==8||routes.some(route=>!route.startsWith('/portfolio/')))throw Error('Reading routes are not distinct');
+await page.locator('.work-directory__cover img').first().evaluate(img=>img.decode()); await page.locator('.work-directory__cover img').nth(1).evaluate(img=>img.decode()); await page.screenshot({path:out+'/directory-desktop.png'});
+await page.goto('http://127.0.0.1:8789/portfolio/map-teleport/',{waitUntil:'domcontentloaded'});
+await page.getByRole('button',{name:'切换为中文',exact:true}).click();
+await page.screenshot({path:out+'/report-desktop.png'});
+const counts={figures:await page.locator('.map-report figure').count(),tables:await page.locator('.map-report table').count(),chapters:await page.locator('.map-report h2').count()};
+if(counts.figures!==10||counts.tables!==4||counts.chapters!==10)throw Error('Incorrect content counts '+JSON.stringify(counts));
+const zh=JSON.parse(fs.readFileSync('src/data/reports/map-teleport.zh.json','utf8'));
+for(const block of zh){if(block.type==='paragraph'||block.type==='heading'){const plain=block.text.replace(/\[([^\]]+)\]\([^)]+\)/g,'$1');if(!(await page.locator('.map-report__body').textContent()).replaceAll('↗','').includes(plain))throw Error('Missing source block '+block.id);}}
+await page.locator('.map-report__toc a[href="#section-8"]').click();
+await page.waitForTimeout(1800);await page.screenshot({path:out+'/report-evidence.png'});
+await page.getByRole('button',{name:'Switch to English',exact:true}).click();
+await page.waitForTimeout(300);
+const enlarged=await page.locator('figure').filter({has:page.locator('img[data-original-src$="player-rescue-feedback.png"]')}).locator('a').getAttribute('href');
+if(!enlarged.endsWith('-en.html'))throw Error('English enlargement missing');
+await page.screenshot({path:out+'/report-english.png'});
+await page.setViewportSize({width:390,height:844});await page.goto('http://127.0.0.1:8789/portfolio/map-teleport/',{waitUntil:'domcontentloaded'});
+await page.getByRole('button',{name:'切换为中文',exact:true}).click();await page.screenshot({path:out+'/report-mobile.png'});
+if(await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth+1))throw Error('Mobile page overflow');
+for(const route of routes){await page.goto('http://127.0.0.1:8789'+route,{waitUntil:'domcontentloaded'});if(await page.locator('.report-reader').count()!==1)throw Error('Reader route missing '+route);}
+await page.setViewportSize({width:1440,height:1000});
+await page.goto('http://127.0.0.1:8789/map-preview/?review=map-teleport-detail',{waitUntil:'domcontentloaded'});
+await page.locator('.map-report--game').waitFor({timeout:15000});if(await page.locator('.map-report--game').count()!==1)throw Error('Game report missing');
+await page.waitForTimeout(2500);await page.screenshot({path:out+'/game-report.png'});
+await page.goto('http://127.0.0.1:8789/map-preview/',{waitUntil:'domcontentloaded'});await page.waitForTimeout(1200);await page.screenshot({path:out+'/game-map.png'});
+fs.writeFileSync(out+'/browser-check.json',JSON.stringify({routes,counts,enlarged,errors},null,2));
+await browser.close();if(errors.length)throw Error(JSON.stringify(errors));console.log('Reading routes, current bilingual report content, language switch, image enlargement, mobile width and game view passed.');

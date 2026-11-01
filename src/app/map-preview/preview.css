@@ -302,3 +302,22 @@
   .map-preview__intro-line { transform: scaleX(1); }
   .map-preview__intro { transition-duration: .01ms; }
 }
+/* Long report passages use the available line width without stretching short cards. */
+:is(.project-detail--map-teleport-review, .project-detail--preservative-review) .project-detail__grid > section:nth-child(3),
+:is(.project-detail--map-teleport-review, .project-detail--preservative-review) .project-detail__grid > section:nth-child(4),
+:is(.project-detail--map-teleport-review, .project-detail--preservative-review) .project-detail__grid > section:last-child {
+  grid-column: 1 / -1;
+}
+:is(.project-detail--map-teleport-review, .project-detail--preservative-review) .project-detail__grid li + li {
+  margin-top: 0.8em;
+}
+
+.teleport-report-heading{padding:55px 36px 35px;border-bottom:1px solid #ceb87744;color:#f3e7c8}.teleport-report-heading>span{font-size:11px;letter-spacing:.18em;color:#cbb77c}.teleport-report-heading h1{font:500 clamp(40px,5vw,68px)/1.2 Georgia,serif;margin:22px 0 12px}.teleport-report-heading p{font-size:19px;line-height:1.7}
+
+.project-detail--map-teleport-review .teleport-report-opening{margin:35px 0 30px}
+.project-detail--map-teleport-review .project-detail__hero.teleport-report-opening>div{padding:24px;background:url('/reading-paper.svg'),#e3d8c3;border:1px solid #bda67d;border-top:3px solid #9c7746;border-radius:2px;box-shadow:0 14px 30px #20170c30}.project-detail--map-teleport-review .project-detail__hero.teleport-report-opening span{color:#77603e;text-shadow:none}.project-detail--map-teleport-review .project-detail__hero.teleport-report-opening p{color:#403a2e;text-shadow:none;font-weight:400}
+.project-detail--map-teleport-review .teleport-report-opening>a{display:block;min-width:0}
+.project-detail--map-teleport-review .teleport-report-opening>a img{max-height:none;height:auto;object-fit:contain;border-radius:4px;border:1px solid #dfc79855}
+
+
+.project-detail--map-teleport-review .teleport-report-opening>a .teleport-report-opening__caption{display:block;padding:10px 14px;background:#e8e1d2;color:#71634f;font-size:12px;line-height:1.8;text-shadow:none}

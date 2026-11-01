@@ -169,8 +169,8 @@ export const projectCaseStudies: Record<ProjectId, LocalizedCaseStudy> = {
     en: [
       {
         step: "01",
-        title: "Preservation Buys Time, Not Safety",
-        body: "A rain-soaked storeroom establishes the mod's core tension before any interface appears: preserved food keeps a shelter alive, while the bottle protecting it remains a lethal survival risk.",
+        title: "Designing food preservation around explicit rules",
+        body: "The concept illustration places food storage and a dangerous preservative package in the same shelter. It introduces the design question: how can longer shelf life remain understandable as a survival choice? The illustration expresses that intention; the following gameplay captures document the implemented rules.",
         visual: {
           kind: "image",
           src: "/portfolio/preservative-01-concept-approved.png",
@@ -178,7 +178,7 @@ export const projectCaseStudies: Record<ProjectId, LocalizedCaseStudy> = {
           frame: {
             variant: "launch",
             eyebrow: "SURVIVAL FILE 01 · CONCEPT",
-            title: "PRESERVATION BUYS TIME / DANGER SETS THE PRICE",
+            title: "FOOD PRESERVATION AND POISONING RISK",
             meta: ["SHELTER", "FOOD", "RISK"],
           },
         },
@@ -186,32 +186,32 @@ export const projectCaseStudies: Record<ProjectId, LocalizedCaseStudy> = {
       },
       {
         step: "02",
-        title: "The Report Connects Market Research to Live Workshop Results",
-        body: "The marketing report is shown beside real Workshop evidence. The recorded Workshop figures are 4,431 unique visitors, 1,480 subscribers at the time of recording, and 182 favorites. These figures document the release outcome without establishing that the marketing analysis caused it.",
+        title: "Documenting publication separately from marketing analysis",
+        body: "The marketing analysis and Workshop screenshot are presented as different records. The screenshot shows 4,431 unique visitors, 1,480 subscribers at capture and 182 favorites; its capture date has not been independently established. These figures document the recorded release response, but do not establish a causal effect of the analysis.",
         visual: { kind: "image", src: "/portfolio/preservative-02-report-evidence.png", alt: "Portfolio board pairing the Project Zomboid marketing report with Steam Workshop performance data" },
         layout: "wide",
         presentation: "framed",
       },
       {
         step: "03",
-        title: "The Cover and Logo Form One Recognizable Mod Identity",
-        body: "The final cover, bottle illustration, and IA signature use the same hazard symbol, amber glass, cyan edge light, and magenta accent so the project stays recognizable at every scale.",
+        title: "Visual continuity across release materials",
+        body: "The cover, package illustration and IA mark repeat the hazard symbol, amber glass, cyan edge light and magenta accents. This gives the release materials a consistent visual identity. The cover introduces the mod on Workshop, while the item artwork and mark carry the same colors and warning motif into the supporting materials.",
         visual: { kind: "image", src: "/portfolio/preservative-03-visual-identity.png", alt: "Portfolio board showing the final Preservative mod cover, bottle artwork, and IA logo system" },
         layout: "wide",
         presentation: "framed",
       },
       {
         step: "04",
-        title: "Food Decay Timing, Poison Alerts, and Antidotes Stay Readable",
-        body: "The in-game evidence shows the complete feedback chain: remaining preservation time in the inventory, a six-hour lethal countdown, a persistent status icon, and clear Lemongrass or Antibiotics guidance.",
+        title: "Explaining active protection and the poisoning countdown",
+        body: "The gameplay board shows remaining protection, a poisoning countdown and treatment guidance. In the current source, a package defaults to 40% preservation efficiency and 30 active game days; only time spent protecting perishable food is deducted. Consuming it starts a countdown of six game hours by default. Lemongrass or Antibiotics clear that fatal timer, although sickness may remain. These treatments are specific to preservative poisoning, not a universal cure.",
         visual: { kind: "image", src: "/portfolio/preservative-04-gameplay-evidence.png", alt: "Portfolio board showing Preservative inventory timing, poisoning countdown, status icon, and antidote guidance in Project Zomboid" },
         layout: "wide",
         presentation: "framed",
       },
       {
         step: "05",
-        title: "The Full Report Is Available Without Leaving the Case Study",
-        body: "Read the PDF inside the page, open it in a dedicated tab, or download the original PowerPoint file for a closer review of the research and launch strategy.",
+        title: "Supporting analysis and source documents",
+        body: "The accompanying report examines Project Zomboid’s Steam store page and community marketing. It provides context for the publication work and can be read in the page or opened separately. The original PowerPoint is also available; together, these materials document my work from game analysis and mod development to preparing the release.",
         visual: {
           kind: "report",
           eyebrow: "PROJECT ZOMBOID / RESEARCH ARCHIVE",
@@ -229,8 +229,8 @@ export const projectCaseStudies: Record<ProjectId, LocalizedCaseStudy> = {
     zh: [
       {
         step: "01",
-        title: "保鲜延长时间，却不等于绝对安全",
-        body: "雨夜储藏间先于界面建立模组的核心矛盾：被保护的食物维持避难所生存，而提供保护的药瓶本身也是足以致命的风险。",
+        title: "从食物保存问题明确模组的设计范围",
+        body: "概念图把食物储藏与危险的防腐剂放在同一间避难所中，表达这个项目的设计出发点：食物可以保存得更久，但玩家也应理解这种便利的条件和风险。概念图用于说明设计意图，后续实机截图则用于记录已经实现的规则。",
         visual: {
           kind: "image",
           src: "/portfolio/preservative-01-concept-approved.png",
@@ -238,7 +238,7 @@ export const projectCaseStudies: Record<ProjectId, LocalizedCaseStudy> = {
           frame: {
             variant: "launch",
             eyebrow: "生存档案 01 · 概念图",
-            title: "保鲜争取时间，危险决定代价",
+            title: "食物保鲜与误食风险",
             meta: ["避难所", "食物", "风险"],
           },
         },
@@ -246,32 +246,32 @@ export const projectCaseStudies: Record<ProjectId, LocalizedCaseStudy> = {
       },
       {
         step: "02",
-        title: "报告分析与真实 Workshop 数据相互印证",
-        body: "营销拆解报告与真实发布数据并置呈现：模组获得 4,431 位不重复访客、1,480 位当前订阅者与 182 次收藏，让研究过程最终落到可验证的发行结果。",
+        title: "分别记录营销分析与工坊发布表现",
+        body: "营销分析与工坊截图是两类不同的记录。截图显示 4,431 名独立访客、截图时的 1,480 名订阅者和 182 次收藏，具体截图日期尚未独立核实。这些数字可以说明当时的发布表现，但不能据此认定营销分析导致了订阅或收藏增长。",
         visual: { kind: "image", src: "/portfolio/preservative-02-report-evidence.png", alt: "并列展示 Project Zomboid 营销报告与 Steam Workshop 成果数据的作品集页面" },
         layout: "wide",
         presentation: "framed",
       },
       {
         step: "03",
-        title: "封面与 Logo 建立统一、可识别的模组形象",
-        body: "终稿封面、药瓶视觉与 IA 标识统一使用危险符号、琥珀玻璃、青色轮廓光和洋红点缀，在不同尺寸下保持同一项目身份。",
+        title: "让封面、物品视觉与标识保持一致",
+        body: "封面、物品视觉与 IA 标识重复使用危险符号、琥珀玻璃、青色轮廓光和洋红点缀，使发布材料在视觉上保持一致。封面用于工坊展示，物品图与标识则延续相同的颜色和危险提示。",
         visual: { kind: "image", src: "/portfolio/preservative-03-visual-identity.png", alt: "展示防腐剂模组封面终稿、药瓶视觉与 IA Logo 系统的作品集页面" },
         layout: "wide",
         presentation: "framed",
       },
       {
         step: "04",
-        title: "食物腐坏计时与中毒警报和解毒方法始终可读",
-        body: "游戏内证据完整呈现反馈链路：背包中的剩余保鲜时间、六小时致命倒计时、持续显示的状态图标，以及明确的香茅草或抗生素解毒提示。",
+        title: "说明保鲜消耗与误食后的处理方式",
+        body: "实机画面记录了剩余保鲜时间、中毒倒计时和处理提示。当前源码中，防腐剂默认提供 40% 的保鲜效率和 30 个有效游戏日，只有实际保护易腐食物时才消耗时间。误食后默认进入六个游戏小时的致命倒计时，使用香茅草或抗生素可以解除该倒计时，但不适仍可能存在；这项处理规则不适用于所有中毒原因。",
         visual: { kind: "image", src: "/portfolio/preservative-04-gameplay-evidence.png", alt: "展示防腐剂剩余时间、中毒倒计时、状态图标与解毒提示的 Project Zomboid 游戏内证据页面" },
         layout: "wide",
         presentation: "framed",
       },
       {
         step: "05",
-        title: "完整报告可以直接阅读，也可以带走原文件",
-        body: "在页面内滚动查看 PDF，也可以在新窗口打开；需要演示或继续编辑时，可直接下载 PPTX 原文件。",
+        title: "附录保留分析过程与原始文档",
+        body: "附录报告讨论《Project Zomboid》的 Steam 商店页与社群营销，为项目发布工作提供背景材料。读者可以在页面内阅读 PDF、在新窗口打开，或下载 PPTX 原文件。报告与实机材料共同保留了我从分析游戏、制作模组到准备发布材料的工作过程。",
         visual: {
           kind: "report",
           eyebrow: "PROJECT ZOMBOID / 研究档案",

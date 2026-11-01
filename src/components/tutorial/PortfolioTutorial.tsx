@@ -43,7 +43,7 @@ export function PortfolioTutorial() {
   const isTutorialRoute = isMap || pathname === "/play" || pathname === "/play/";
 
   useEffect(() => {
-    if (!isTutorialRoute || new URLSearchParams(window.location.search).get("from") === "directory" || new URLSearchParams(window.location.search).get("scene") === "all") { setStep(null); return; }
+    if (!isTutorialRoute || new URLSearchParams(window.location.search).has("review") || new URLSearchParams(window.location.search).get("from") === "directory" || new URLSearchParams(window.location.search).get("scene") === "all") { setStep(null); return; }
     const forced = new URLSearchParams(window.location.search).get("tutorial") === "1";
     const stored = window.sessionStorage.getItem("portfolio-tutorial-step");
     if (isMap && forced) {

@@ -5,7 +5,18 @@ const fs = require("node:fs");
 const path = require("node:path");
 const { spawn } = require("node:child_process");
 
-const root = path.join(__dirname, "out");
+// Next exports to the configured distDir when output is "export".
+// Prefer its successful export marker so local preview does not serve an older /out.
+function latestExportRoot() {
+  const fallback = path.join(__dirname, "out");
+  try {
+    const detail = JSON.parse(fs.readFileSync(path.join(__dirname, ".next", "export-detail.json"), "utf8"));
+    const candidate = path.resolve(detail.outDirectory);
+    if (detail.success && candidate.startsWith(__dirname + path.sep) && fs.existsSync(path.join(candidate, "index.html"))) return candidate;
+  } catch { /* No completed build yet; keep the original /out fallback. */ }
+  return fallback;
+}
+const root = latestExportRoot();
 const requestedPort = process.env.PORT ? Number(process.env.PORT) : 0;
 const types = {
   ".css": "text/css; charset=utf-8", ".gif": "image/gif", ".html": "text/html; charset=utf-8",

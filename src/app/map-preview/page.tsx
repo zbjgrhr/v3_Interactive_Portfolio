@@ -2,6 +2,7 @@
 
 import Image from "@/components/portfolio/LocalizedImage";
 import Link from "next/link";
+import MapTeleportReport from "@/components/portfolio/MapTeleportReport";
 import { LanguageSwitch } from "@/components/accessibility/LanguageSwitch";
 import { useEffect, useRef, useState, type CSSProperties } from "react";
 import { projects } from "@/data/projects";
@@ -84,14 +85,14 @@ const iwbtzMotion = [
   "/portfolio/iwbtz-case-05-boss-pattern.gif",
 ];
 const galleryCaptions: Record<string, { zh: string[]; en: string[] }> = {
-  "map-teleport": { zh: ["基础版 · 游戏内独立地图右键入口", "车辆与拖车版 · 地图菜单与车队示意", "游戏内多模组地图菜单共存", "基础版 · Steam 创意工坊发布页面", "车辆与拖车版 · Steam 创意工坊发布页面"], en: ["Base edition · In-game world-map action", "Vehicle edition · Menu and convoy", "Coexisting mod menus in game", "Base edition on Steam Workshop", "Vehicle edition on Steam Workshop"] },
+  "map-teleport": { zh: ["基础版 · 游戏内独立地图右键入口", "车辆与拖车版 · 地图菜单与车队示意", "游戏内多模组地图菜单共存", "基础版 · 工坊页面存档截图", "车辆与拖车版 · 工坊页面存档截图"], en: ["Base edition · In-game world-map action", "Vehicle edition · Menu and convoy", "Coexisting mod menus in game", "Base edition · Archived Workshop capture", "Vehicle edition · Archived Workshop capture"] },
   "pixel-world": {
     zh: ["从创意出发，交给十个 Agent 分工复核", "同一套生成流程，展开不同的可玩世界", "让关卡与游戏画面真正跑起来", "模型路由也由创作者清楚掌控", "像素世界制作器的主界面", "提示词、GameSpec 与十个 Agent 的工作流", "按任务与成本选择模型路线", "Agent 配置与分工复核", "素材系统将生成内容整理成可用资源", "封面粒子与世界氛围", "生成游戏的真实入口与菜单", "环境与移动规则随关卡变化", "同一提示词延展出的三种可玩世界"],
     en: ["An idea enters a ten-agent review", "One process, different playable worlds", "Levels and game scenes brought to life", "Model routing stays in the creator's hands", "The Pixel World creator interface", "Prompts, GameSpec, and the ten-agent workflow", "Model routes selected by task and cost", "Agent configuration and review", "The asset system turns generation into usable resources", "Cover particles and world atmosphere", "A real generated game's entry and menu", "Level-specific environments and movement rules", "Three playable worlds from one prompt"],
   },
   preservative: {
     zh: ["把保鲜规则交还给沙盒设置", "在物品信息里看清保护效果", "误食风险与治疗提示同时可见", "模组在游戏中的实际场景", "模组封面与核心视觉", "更轻松的传播视觉方案", "封面、物品与模组图标保持同一识别", "把保护效率与解毒提示放到游玩现场", "Steam 创意工坊的真实发布页面", "玩家访问、订阅与收藏的发布结果", "带品牌识别的动态模组图标", "游戏内的防腐剂物品动图"],
-    en: ["Preservation rules in sandbox settings", "Protection details at the point of use", "Poisoning risk and treatment in view", "The mod in its game world", "The mod cover and core visual", "A lighter campaign direction", "One visual identity across cover, item, and mod icon", "Protection and antidote guidance in gameplay context", "The published Steam Workshop page", "Real visits, subscriptions, and favorites", "The animated branded mod icon", "The preservative item animated in-game"],
+    en: ["Preservation rules in sandbox settings", "Protection details at the point of use", "Poisoning risk and treatment in view", "The mod in its game world", "The mod cover and core visual", "A lighter campaign direction", "One visual identity across cover, item, and mod icon", "Protection and antidote guidance in gameplay context", "The published Steam Workshop page", "Workshop statistics recorded in the screenshot", "The animated branded mod icon", "The preservative item animated in-game"],
   },
   "rainy-arcade": {
     zh: ["《积木城》：从道路和记忆里拼回一个家", "《雨城》：在不可靠的规则中找出口", "只留在本地的游玩记录与分析", "从对话选择到线索核对的交互流程", "游戏厅的封面与整体氛围", "从同一大厅通往不同玩法世界", "主要角色与故事关系的视觉设定", "玩家与张华心的角色四视图", "《图书城》的视觉与交互概念（规划中）", "《积木城》可玩界面与章节入口", "《雨城》可玩界面与分段阅读", "《图书城》的界面概念（规划中）"],
@@ -157,7 +158,7 @@ function ProjectLivePreview({ project, locale }: { project: ProjectArchive; loca
   const finished = pixelWorld && pixelView === "finished";
   const address = new URL(project.liveDemo).hostname;
   const description = project.id === "preservative"
-    ? (locale === "zh" ? "我在 Steam 撰写了 13 款游戏的拆解笔记，代表作是《Project Zomboid》国际化社群与营销分析。另为《Project Zomboid》制作数款模组，代表作《防腐剂》见下文。" : "A featured piece from my Steam notes on 13 games: the Project Zomboid international community and marketing analysis. I also made several Project Zomboid mods, including Preservative, featured below.")
+    ? (locale === "zh" ? "这里附上我撰写的《Project Zomboid》国际化社群与营销分析报告。下文介绍《防腐剂》的规则设计、实机界面与发布记录；报告与模组分别说明研究判断和开发实践。" : "The accompanying report examines international communities and marketing for Project Zomboid. The sections below document Preservative’s rules, in-game interface and release. The report provides the analytical context; the mod documents the development work.")
     : project.id === "rainy-arcade"
       ? (locale === "zh" ? "直接进入雨夜游戏厅，探索可游玩的故事。" : "Step into the arcade and explore its playable stories.")
       : (locale === "zh" ? "在这里体验 Pixel World 制作器。" : "Explore the Pixel World creator here.");
@@ -700,18 +701,20 @@ export default function MapPreviewPage() {
             )}
             {activeProject.download && <p className="project-detail__download-help"><span aria-hidden="true">✦</span>{locale === "zh" ? "安装方法：解压后，在 Chrome / Edge 的扩展程序页开启开发者模式，选择“加载已解压的扩展程序”。" : "To install: unzip, enable Developer mode in Chrome / Edge extensions, then choose Load unpacked."}</p>}
             {locale === "en" && <p className="project-detail__image-language-note">Image text has been translated for this report. Select CN to view the original images.</p>}
-            {activeProject.id === "survival-log" ? <SurvivalLogCase locale={locale} /> : <>
+            {activeProject.id === "survival-log" ? <SurvivalLogCase locale={locale} /> : activeProject.id === "map-teleport" ? <><div className="project-detail__hero teleport-report-opening" id="report-top"><div><span>{activeCopy.category}</span><h1><Image src="/portfolio/map-teleport/logo.png" alt={activeCopy.title} width={1086} height={362} unoptimized /></h1><p>{activeCopy.oneLiner}</p></div><a href={activeDetailImage} target="_blank" rel="noopener noreferrer" aria-label={locale === "zh" ? "放大查看产品概念图" : "Enlarge the product concept image"}><Image src={activeDetailImage} alt={locale === "zh" ? "Map Teleport 产品概念图" : "Map Teleport product concept"} width={1536} height={1024} unoptimized priority /><span className="teleport-report-opening__caption">{locale === "zh" ? "图 1　Map Teleport 产品概念图。" : "Figure 1. Map Teleport product concept."}</span></a></div><MapTeleportReport locale={locale} theme="game" /></> : <>
             <ProjectLivePreview project={activeProject} locale={locale} />
             <div className="project-detail__hero">
-              <div><span>{activeCopy.category}</span><h1>{activeProject.id === "map-teleport" ? <Image src="/portfolio/map-teleport/logo.png" alt={activeCopy.title} width={1086} height={362} unoptimized /> : activeCopy.title}</h1><p>{activeCopy.oneLiner}</p></div>
+              <div><span>{activeCopy.category}</span><h1>{activeCopy.title}</h1><p>{activeCopy.oneLiner}</p></div>
               <Image src={activeDetailImage} alt={activeProject.title + (locale === "zh" ? " 项目图片" : " project image")} width={1280} height={720} unoptimized priority />
             </div>
-            {activeProject.id === "map-teleport" && <section className="teleport-editions" aria-label={locale === "zh" ? "两个独立版本" : "Two standalone editions"}><h2>{locale === "zh" ? "两个版本，均可独立使用" : "Two editions, each standalone"}</h2><p>{locale === "zh" ? "基础版：人物与动物传送。车辆与拖车版：包含人物与动物，并增加车队传送；无需基础版、ZombieBuddy 或其他前置。多人服务器与客户端须使用相同版本。" : "Base: characters and animals. Vehicle & Trailer: adds convoy transfer and includes character/animal transfer. No base mod, ZombieBuddy or other prerequisite. Servers and clients must use matching versions."}</p><div>{mapTeleportWorkshops.map((edition) => <a key={edition.id} href={edition.url} target="_blank" rel="noopener noreferrer"><strong>{locale === "zh" ? edition.zh : edition.en} ↗</strong><small>Workshop {edition.id} · {edition.modId}</small></a>)}</div></section>}
+
             {activeProject.id === "pixel-world" ? (locale === "zh" ? <PixelWorldReport /> : <PixelWorldReportEnglish />) : <><div className="project-detail__grid">
               <section><h2>{locale === "zh" ? "项目背景" : "Context"}</h2><p>{activeCopy.context}</p></section>
+              {["map-teleport", "preservative"].includes(activeProject.id) && <section><h2>{locale === "zh" ? "需要解决的问题" : "Problem definition"}</h2><p>{activeCopy.problem}</p></section>}
               <section><h2>{locale === "zh" ? "我的角色" : "My Role"}</h2><p>{activeCopy.role}</p></section>
               <section><h2>{locale === "zh" ? "设计与实现" : "Design & Implementation"}</h2><ul>{activeCopy.process.map((step) => <li key={step}>{step}</li>)}</ul></section>
               <section><h2>{locale === "zh" ? "结果" : "Outcome"}</h2><p>{activeCopy.outcome}</p></section>
+              {["map-teleport", "preservative"].includes(activeProject.id) && <><section><h2>{locale === "zh" ? "设计取舍" : "Design decisions"}</h2><ul>{activeCopy.keyDecisions.map((item) => <li key={item}>{item}</li>)}</ul></section><section><h2>{locale === "zh" ? "开发反思" : "Reflection"}</h2><ul>{activeCopy.learned.map((item) => <li key={item}>{item}</li>)}</ul></section></>}
             </div>
             <div className="project-detail__gallery">
               {(activeProject.id === "iwbtz" ? [...activeProject.screenshots, ...iwbtzMotion] : activeProject.id === "preservative" ? [...activeProject.screenshots, ...preservativeExpanded] : activeProject.id === "rainy-arcade" ? [...activeProject.screenshots, ...rainyArcadeExpanded] : activeProject.screenshots).map((src, index) => (

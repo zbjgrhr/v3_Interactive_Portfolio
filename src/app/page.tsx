@@ -16,7 +16,7 @@ export default function HomePage() {
         <span className="portfolio-entry__footnote">{zh ? "一张地图，一段由你展开的旅程。" : "Choose your own path through the projects."}</span>
       </Link>
       <Link className="portfolio-entry__path portfolio-entry__path--direct" href="/portfolio/">
-        <div className="portfolio-entry__copy"><span className="portfolio-entry__eyebrow">02 / BROWSE THE WORK</span><span className="portfolio-entry__index" aria-hidden="true">↗</span><h2>{zh ? <>直接查看<br />作品集</> : <>Browse the<br />projects</>}</h2><p>{zh ? "浏览全部项目，直接查看详情、在线体验或下载" : "Read the project reports, explore live demos, and access available downloads."}</p><span className="portfolio-entry__button">{zh ? "查看全部作品" : "View all projects"} <span aria-hidden="true">→</span></span></div>
+        <div className="portfolio-entry__copy"><span className="portfolio-entry__eyebrow">02 / BROWSE THE WORK</span><span className="portfolio-entry__index" aria-hidden="true">↗</span><h2>{zh ? <>直接阅读<br />项目报告</> : <>Read the<br />project reports</>}</h2><p>{zh ? "浏览全部项目，直接查看详情、在线体验或下载" : "Read the project reports, explore live demos, and access available downloads."}</p><span className="portfolio-entry__button">{zh ? "查看全部作品" : "View all projects"} <span aria-hidden="true">→</span></span></div>
         <span className="portfolio-entry__footnote">{zh ? "游戏设计 / AI 产品 / 研究与开发" : "Game design / AI products / Research & development"}</span>
       </Link>
     </main>

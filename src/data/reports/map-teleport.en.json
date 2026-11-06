@@ -1,529 +1,188 @@
 [
   {
     "type": "paragraph",
-    "text": "Map Teleport is a series of map teleportation mods for Project Zomboid developed by Huaxin Zhang, known across platforms as Introvert Arcade. The current releases are the Right-Click Rescue character edition and the Vehicle & Trailer edition. While using some cheat mods, the developer would right-click the place she wanted to reach on the world map but could not find the Teleport Here option for moving her character. She made the character edition to address this difficulty, then gradually added support for animals, vehicles and trailers. She released the mods through Steam Workshop and continues to maintain them.",
-    "id": "MT001"
+    "text": "Developer: Huaxin Zhang, publishing across platforms as Introvert Arcade. Revised: 2 November 2026.",
+    "id": "MTF001"
+  },
+  {
+    "type": "paragraph",
+    "text": "Map Teleport is a series of world-map teleport mods for Project Zomboid. The current editions are Right-Click Rescue for characters and Vehicle & Trailer for vehicles. They are published and maintained through Steam Workshop.",
+    "id": "MTF004"
   },
   {
     "type": "heading",
     "level": 2,
-    "text": "Origins",
     "anchor": "section-1",
-    "id": "MT002"
+    "text": "Development background",
+    "id": "MTF005"
   },
   {
     "type": "paragraph",
-    "text": "The developer repeatedly encountered a specific difficulty: when she wanted to teleport her character to a location on the map, right-clicking that location did not bring up Teleport Here, so she could not travel in this way. The world-map context menu also serves navigation, markers and other functions. Adding a teleport option therefore required checking that these actions remained usable.",
-    "id": "MT003"
+    "text": "Project Zomboid is a demanding game. Players can lose their characters to various hazards, ending a playthrough and detracting from the experience.",
+    "id": "MTF006"
   },
   {
     "type": "paragraph",
-    "text": "She tried switching mods, changing their load order, and modifying code and key bindings. After each change, she had to check whether teleportation worked; some changes also meant adjusting an established way of playing. She could inspect and modify code, but players unfamiliar with programming might not be able to solve the problem in the same way. Learning to edit code or repeatedly switching tools was a considerable inconvenience just to use a teleport function. She therefore made Right-Click Rescue as a directly installable mod, adding a separate character teleport option to the world-map context menu so that other players facing similar difficulties would have less troubleshooting to do.",
-    "id": "MT004"
-  },
-  {
-    "type": "paragraph",
-    "text": "Right-Click Rescue retains the familiar action of right-clicking a destination on the world map, while preserving the other map actions when adding its teleport option. If teleportation moves only the character, vehicles and trailers still have to be retrieved, and rope-led animals may become separated from the player. Vehicles and trailers left far away can be difficult to recover and may be damaged. She had also seen requests for vehicle teleportation in comments on other cheat mods and in forum discussions. This led her to consider how animals and vehicle convoys could travel with the character.",
-    "id": "MT005"
-  },
-  {
-    "type": "figure",
-    "src": "/portfolio/map-teleport/base-map-menu.png",
-    "alt": "Character teleport menu",
-    "caption": "Figure 2  The character edition adds a separate Teleport Here option while retaining Add Destination.",
-    "width": 727,
-    "height": 565,
-    "id": "MT006"
+    "text": "Steam Workshop provides a channel for publishing and subscribing to mods. Project Zomboid’s Lua mod system and related development tools allow individual creators to change game rules and controls, then share their work through the Workshop (Steamworks Workshop documentation; official game information). Existing character-teleport tools take different approaches. For example, [B42] Teleportation Menu (simple) lets players enter destination coordinates in a panel, while the update notes for Cheat Menu Phoenix include teleporting characters through the world-map context menu. These mods can move characters to a specified location. However, problems encountered during use included the difficulty of choosing a destination by entering coordinates, conflicts between world-map context-menu options (lower-priority mods or options being obscured, or Teleport Here sometimes missing from the context menu), and large mod files causing the game to lag after loading. These problems led to the development of two world-map teleport mods: Right-Click Rescue and Vehicle & Trailer.",
+    "id": "MTF007"
   },
   {
     "type": "heading",
     "level": 2,
-    "text": "Release environment",
     "anchor": "section-2",
-    "id": "MT007"
+    "text": "Mod overview",
+    "id": "MTF008"
+  },
+  {
+    "type": "heading",
+    "level": 3,
+    "anchor": "edition-9",
+    "text": "Right-Click Rescue — Character edition",
+    "id": "MTF009"
   },
   {
     "type": "paragraph",
-    "text": "Steam Workshop provides a channel for publishing, subscribing to and updating mods. Project Zomboid's Lua modding mechanisms and development tools allow individual creators to adjust game rules and interactions, then share their work with players through the Workshop. [Steamworks Workshop documentation](https://partner.steamgames.com/doc/features/workshop), [official game description](https://store.steampowered.com/app/108600/Project_Zomboid/)",
-    "id": "MT008"
+    "text": "Right-Click Rescue was developed by investigating mod conflicts, adjusting the load order, modifying code and adding an alternative keyboard shortcut. It can be installed directly and supports single-player and multiplayer in B42.21. Players keep the familiar interaction of right-clicking a destination on the world map and selecting Teleport Here. Carried and rope-led animals travel with the character. The teleport option appears alongside other mods’ world-map context-menu options, so players can choose the action they need. An optional keyboard shortcut can be assigned under Options → Key Bindings → Universal Map Teleport, using UMTSP: Teleport Here (World Map). Once assigned, open the world map, point at the destination and press the key to teleport the character.",
+    "id": "MTF010"
+  },
+  {
+    "type": "heading",
+    "level": 3,
+    "anchor": "edition-11",
+    "text": "Vehicle & Trailer — Vehicle edition",
+    "id": "MTF011"
   },
   {
     "type": "paragraph",
-    "text": "Players often install mods by several creators at once, and some of those mods use the same menu or game interface. After the game or a mod is updated, functions that previously worked together may need to be checked again. She was using several mods when she encountered the difficulty described above, so her troubleshooting included switching mods and changing their load order. This describes the circumstances and the steps she tried; the specific cause has not been confirmed.",
-    "id": "MT009"
-  },
-  {
-    "type": "paragraph",
-    "text": "An early test mod in the Map Teleport series was publicly released on the Workshop. The Right-Click Rescue character edition and Vehicle & Trailer edition were released subsequently. Once testing of those two editions was complete, the early test mod was taken down.",
-    "id": "MT010"
-  },
-  {
-    "type": "paragraph",
-    "text": "For a mod creator, publication is only the beginning. Installation and usage instructions need to keep pace with new versions, and issues arising from different combinations of mods need follow-up. Players can use the Workshop page to learn about the mod, read update notes and report problems in comments.",
-    "id": "MT011"
-  },
-  {
-    "type": "figure",
-    "src": "/portfolio/map-teleport/base-workshop.png",
-    "alt": "Character-edition Workshop page",
-    "caption": "Figure 3  Historical screenshot of the character-edition Workshop page, including the preview image, version information, change notes and comments. It represents the version available at that time and should not be used as the installation guide for the current release; see “Usage conditions” in Section 5 for current requirements.",
-    "width": 2559,
-    "height": 1438,
-    "id": "MT012"
+    "text": "Once character teleportation worked, the next question was whether vehicles, trailers and animals could travel too. A player may have spent a long time finding a suitable vehicle. If only the character moves, the vehicles and animals accompanying them remain behind. The player then has to return for the vehicle and trailer or find replacements, while rope-led animals can become separated after the character leaves. This reduces the usefulness of teleportation. No mod offering these functions had been found. Vehicle & Trailer was therefore developed, adding the world-map context-menu option Teleport Vehicle Here. It transfers the current vehicle and its connected towing chain together. Passengers arrive outside the vehicles, which are placed on nearby open ground. Animals loaded through the game’s native in-vehicle animal system or supported mod systems travel too. Towing connections are restored after arrival, as are the leads of rope-led animals travelling with the character. Players can choose whether to teleport characters, vehicles, trailers and animals. The vehicle edition includes the character edition’s functions, but the character edition remains available to accommodate players’ habits and preferences. The vehicle edition also provides an optional shortcut: under Options → Key Bindings → Universal Map Teleport, assign a key to UMTSP: Teleport Here (World Map). Then open the world map, point at the destination and press the key. On foot, this teleports the character directly; while seated in a vehicle, it offers character or vehicle teleportation.",
+    "id": "MTF012"
   },
   {
     "type": "heading",
     "level": 2,
-    "text": "Existing approaches",
     "anchor": "section-3",
-    "id": "MT013"
+    "text": "Publication",
+    "id": "MTF013"
   },
   {
     "type": "paragraph",
-    "text": "The Workshop already offers teleport tools with different interfaces. For example, [B42] Teleportation Menu (simple) uses a panel to set and select destinations, while the update notes for Cheat Menu Phoenix also include world-map right-click teleportation. These tools offer different ways to teleport, but the developer still needed an approach that worked in her own setup and met her requirements for accompanying animals and vehicles. Map Teleport addresses two practical needs: adding a separate teleport option to the world-map context menu so that players have a usable way to move their character, and allowing vehicles, trailers and animals to travel with that character. [Teleportation Menu Workshop page](https://steamcommunity.com/sharedfiles/filedetails/?id=3498389154), [Cheat Menu Phoenix Workshop page](https://steamcommunity.com/sharedfiles/filedetails/?id=3453422228)",
-    "id": "MT014"
-  },
-  {
-    "type": "paragraph",
-    "text": "Among the tools she found and tried at the time, none met all these requirements. This assessment is limited to the tools and versions she had actually used.",
-    "id": "MT015"
-  },
-  {
-    "type": "paragraph",
-    "text": "These experiences led to the three design responses in Table 1.",
-    "id": "MT016"
-  },
-  {
-    "type": "paragraph",
-    "text": "Table 1  Needs and design responses",
-    "id": "MT017"
-  },
-  {
-    "type": "table",
-    "headers": [
-      "Usage problem",
-      "Previous approach and its cost",
-      "Design response"
-    ],
-    "rows": [
-      [
-        "While using some cheat mods, right-clicking the desired location on the world map does not show a character teleport option",
-        "Switch mods, change their load order, or modify code or key bindings; this requires additional troubleshooting and may change familiar controls",
-        "Add a separate Teleport Here option to the existing world-map context menu, retain other menu items, and provide an optional key binding"
-      ],
-      [
-        "Vehicles and trailers remain far away after the character teleports",
-        "Return to retrieve them or arrange another means of transport, adding a return journey",
-        "The vehicle edition moves the current vehicle and its connected convoy together; passengers arrive outside the vehicles, and vehicles and trailers are placed on nearby open ground"
-      ],
-      [
-        "Rope-led animals may become separated after the character leaves",
-        "Return to find the animals and lead them again, with a risk that they cannot be found",
-        "Carried and rope-led animals travel with the character, and leads are restored on arrival; the vehicle edition also moves animals loaded using the game’s native in-vehicle animal mechanism"
-      ]
-    ],
-    "id": "MT018"
-  },
-  {
-    "type": "paragraph",
-    "text": "A player may know exactly where they want to go, yet find no teleport option after right-clicking that location on the map, leaving them to troubleshoot or use another method. Even after the character arrives, they may still need to return for vehicles or search for animals. The three design responses address these inconveniences, reducing the time spent investigating menus, retrieving vehicles or finding animals so that players can continue with their own plans.",
-    "id": "MT019"
-  },
-  {
-    "type": "paragraph",
-    "text": "Convenience features also change the experience of playing. Teleportation reduces the risks of travel and changes how vehicles and supplies are transported; for some players, those activities are an important part of survival gameplay. The developer therefore makes a point of playing extensively and understanding the basic mechanics, values and parameters before reading community discussions and talking with other creators and players. This helps her judge which burdens are worth reducing and how far a feature should go. Players then decide whether to use these features according to their own way of playing.",
-    "id": "MT020"
-  },
-  {
-    "type": "heading",
-    "level": 2,
-    "text": "Menu compatibility",
-    "anchor": "section-4",
-    "id": "MT021"
-  },
-  {
-    "type": "paragraph",
-    "text": "Right-Click Rescue supports B42.21 single-player and multiplayer games and provides a separate Teleport Here option in the world-map context menu. When adding this option, the mod preserves existing map actions, including navigation/GPS, routes, destinations and markers. Whether menu items added by other mods work alongside it also needs to be checked for each combination.",
-    "id": "MT022"
-  },
-  {
-    "type": "paragraph",
-    "text": "Alongside the context menu, the mod provides an alternative keyboard shortcut that players must bind themselves. Under Options → Key Bindings → Universal Map Teleport, players can assign a key to UMTSP: Teleport Here (World Map). They can then open the world map, point to a destination and press that key to teleport their character.",
-    "id": "MT023"
-  },
-  {
-    "type": "figure",
-    "src": "/portfolio/map-teleport/menu-coexistence.png",
-    "alt": "Coexisting map menu options",
-    "caption": "Figure 4  Teleport, destination and marker options displayed in the same map interface.",
-    "width": 2544,
-    "height": 1450,
-    "id": "MT024"
-  },
-  {
-    "type": "paragraph",
-    "text": "The developer first studied how different mods add menu options, then checked whether those options could work together. Checks included whether each mod's options remained visible when Map Teleport and AutoDrive loaded in different orders, whether repeatedly opening the world-map context menu produced duplicate items, and whether selecting teleport, destination and other menu items invoked their respective functions. The archived test record covers AutoDrive in two load orders, checks for duplicate menu items, and checks that selecting each item invokes its intended action. These historical records include Lua simulation checks and are not a substitute for full in-game testing across different mod combinations. [Historical test record](https://github.com/zbjgrhr/Universal-Map-Teleport-SP/blob/7727fc80130e16010101bbecda0c195815f566d6/current/mod/TEST_REPORT.md)",
-    "id": "MT025"
-  },
-  {
-    "type": "paragraph",
-    "text": "These checks can guide her troubleshooting if menu problems arise again. Maintenance needs to establish not only whether the teleport option appears, but also whether the other options remain present, whether any are duplicated, and whether selecting them performs the intended action.",
-    "id": "MT026"
-  },
-  {
-    "type": "heading",
-    "level": 2,
-    "text": "Teleportation rules",
-    "anchor": "section-5",
-    "id": "MT027"
-  },
-  {
-    "type": "paragraph",
-    "text": "Once character teleportation worked, the next question was whether vehicles, trailers and animals could leave with the character. A player may have spent a long time finding a suitable vehicle. Moving only the character means returning to retrieve that vehicle and its trailer. Rope-led animals may also become separated from the player after departure. She therefore added support for animals accompanying character transfers and went on to develop an edition that teleports vehicles and trailers.",
-    "id": "MT028"
-  },
-  {
-    "type": "heading",
-    "level": 3,
-    "text": "What travels",
-    "anchor": "section-5-1",
-    "id": "MT029"
-  },
-  {
-    "type": "paragraph",
-    "text": "The character edition provides Teleport Here. The vehicle edition retains this action and adds Teleport Vehicle Here. When Teleport Here is used from inside a vehicle, the character leaves the vehicle and teleports, while the vehicle and other passengers stay behind. Teleport Vehicle Here moves the character, other passengers and the connected convoy together. It must be initiated from inside a vehicle after the convoy has stopped; in multiplayer, the driver initiates it.",
-    "id": "MT030"
-  },
-  {
-    "type": "paragraph",
-    "text": "Table 2  Comparison of teleport actions",
-    "id": "MT031"
-  },
-  {
-    "type": "table",
-    "headers": [
-      "Conditions and results",
-      "Teleport Here: character transfer",
-      "Teleport Vehicle Here: convoy transfer"
-    ],
-    "rows": [
-      [
-        "Initiating the action",
-        "Available on foot or from inside a vehicle; the character leaves the seat before teleporting",
-        "Initiate from inside a vehicle after the connected convoy has stopped; in multiplayer, the driver performs the action"
-      ],
-      [
-        "Current vehicle and connected towing chain",
-        "Remain at the starting point",
-        "Travel together, including supported towed vehicles, trailers and animal trailers"
-      ],
-      [
-        "Other passengers",
-        "Remain at the starting point",
-        "Travel together and appear outside the vehicles after arrival"
-      ],
-      [
-        "Animals",
-        "Carried and rope-led animals travel with the character",
-        "Carried animals, rope-led animals and supported animals inside vehicles travel together"
-      ],
-      [
-        "Vehicle position after arrival",
-        "The vehicle has not moved",
-        "Placed on open ground near the character; the map temporarily marks the parking position without continually leaving old vehicle-position markers after repeated transfers"
-      ],
-      [
-        "Multiplayer operation",
-        "Ordinary players can use it without administrator approval",
-        "Initiated by the driver, with other passengers traveling together"
-      ]
-    ],
-    "id": "MT032"
-  },
-  {
-    "type": "note",
-    "text": "Based on the archived [character-edition instructions](https://github.com/zbjgrhr/Universal-Map-Teleport-SP/blob/7727fc80130e16010101bbecda0c195815f566d6/current/mod/README.md) and [vehicle-edition instructions](https://github.com/zbjgrhr/Map-Teleport---Vehicle-Trailer-Add-on/blob/db1f22e8394b073a304dd7f09b0f6cdd4ca9d3ab/current/mod/README.md). A convoy consists of the current vehicle and its connected towing chain.",
-    "id": "MT033"
-  },
-  {
-    "type": "paragraph",
-    "text": "The main distinction between the two actions is whether the vehicle and other passengers travel with the character. Character teleportation is available when the convoy does not need to move; vehicle teleportation is used when it does. Listing the actions separately lets players decide whether to take the convoy before they proceed.",
-    "id": "MT034"
-  },
-  {
-    "type": "figure",
-    "src": "/portfolio/map-teleport/vehicle-map-menu.png",
-    "alt": "Vehicle-edition feature illustration",
-    "caption": "Figure 5  Vehicle-edition feature illustration showing the character and convoy teleport actions.",
-    "width": 1254,
-    "height": 1254,
-    "id": "MT035"
-  },
-  {
-    "type": "heading",
-    "level": 3,
-    "text": "Arrival state",
-    "anchor": "section-5-2",
-    "id": "MT036"
-  },
-  {
-    "type": "paragraph",
-    "text": "After a convoy transfer, the character and passengers appear outside the vehicles, with the vehicles and trailers on nearby open ground. Players can check their positions before continuing. Animals that were being led by a rope remain led by the character on arrival. The map temporarily marks the vehicle's parking position, without leaving an increasing number of markers after repeated transfers.",
-    "id": "MT037"
-  },
-  {
-    "type": "heading",
-    "level": 3,
-    "text": "Usage conditions",
-    "anchor": "section-5-3",
-    "id": "MT038"
-  },
-  {
-    "type": "paragraph",
-    "text": "The character edition and current vehicle edition can both be installed independently. The vehicle edition requires neither the character edition nor ZombieBuddy or another prerequisite mod. Multiplayer servers and clients must have matching versions of the mod installed.",
-    "id": "MT039"
-  },
-  {
-    "type": "paragraph",
-    "text": "Single-player uses direct teleportation. Multiplayer first attempts to complete the transfer in one move; if the network or map conditions at that time do not allow this, it moves in several segments instead. Pressing Esc during a segmented transfer stops the remaining journey, but does not undo movement that has already occurred or return the character to the starting point. Multiplayer functionality has undergone only initial testing and still needs checks across different servers and network environments.",
-    "id": "MT040"
-  },
-  {
-    "type": "paragraph",
-    "text": "The vehicle edition supports vanilla vehicles and modded vehicles that use the game's native vehicle, towing and in-vehicle animal mechanisms. Compatibility with vehicles using other custom mechanisms cannot be guaranteed on this basis.",
-    "id": "MT041"
-  },
-  {
-    "type": "heading",
-    "level": 2,
-    "text": "Visual identity",
-    "anchor": "section-6",
-    "id": "MT042"
-  },
-  {
-    "type": "paragraph",
-    "text": "The developer designed a separate visual identity for each edition, aiming to make the mod's purpose and operation apparent at a glance as players browse the Workshop.",
-    "id": "MT043"
+    "text": "The Map Teleport series is published on Steam Workshop. The developer uses Introvert Arcade as her publishing name across platforms. An early test mod was made publicly available on the Workshop. Vehicle & Trailer launched on 19 October 2026, followed by Right-Click Rescue the next day. The early test mod was taken down after testing was complete. Each edition has its own logo to help players quickly identify its purpose and controls on the Workshop.",
+    "id": "MTF014"
   },
   {
     "type": "figure",
     "src": "/portfolio/map-teleport/report/rescue-logo.png",
-    "alt": "Right-Click Rescue visual identity",
-    "caption": "Figure 6  Character-edition identity featuring a location pin, mouse and map context menu.",
+    "alt": "Figure 2. Character edition logo",
+    "caption": "Figure 2. Character edition logo",
     "width": 1254,
     "height": 1254,
-    "id": "MT044"
-  },
-  {
-    "type": "paragraph",
-    "text": "The character edition uses a yellow location pin to represent the destination. A mouse and the Teleport Here menu item show the action: right-click the desired location on the map, then select teleport. Add Destination also appears in the image, expressing the intention that teleportation should coexist with other map actions. The name Right-Click Rescue likewise reflects the original purpose: giving players facing the same inconvenience a separate option for world-map right-click teleportation.",
-    "id": "MT045"
+    "id": "MTF-logo-12"
   },
   {
     "type": "figure",
     "src": "/portfolio/map-teleport/report/vehicle-logo.png",
-    "alt": "Vehicle & Trailer visual identity",
-    "caption": "Figure 7  Vehicle-edition identity featuring a car, an animal trailer and the Teleport Vehicle Here menu item.",
+    "alt": "Figure 3. Vehicle edition logo",
+    "caption": "Figure 3. Vehicle edition logo",
     "width": 512,
     "height": 512,
-    "id": "MT046"
+    "id": "MTF-logo-13"
   },
   {
     "type": "paragraph",
-    "text": "The vehicle edition retains the yellow location pin, map grid and menu styling to give both editions a consistent series identity. The car and animals in the trailer illustrate what can travel, while the Teleport Vehicle Here menu item shows how to initiate a vehicle transfer. B42.21 and SINGLE + MULTIPLAYER identify the supported game version and single-player and multiplayer modes.",
-    "id": "MT047"
+    "text": "The character edition uses a yellow location marker to represent the destination. A mouse and the Teleport Here menu item illustrate the interaction: right-click the desired location on the map, then choose teleport. Add Destination also appears in the image, expressing the intention that teleportation should coexist with other mods’ map actions. The name Right-Click Rescue reflects the original aim: to give players encountering similar problems a separate menu option for world-map teleportation.",
+    "id": "MTF018"
   },
   {
     "type": "paragraph",
-    "text": "The two designs use a similar visual style to identify them as one series, while different graphics and menu wording distinguish the editions. These elements communicate what the mods do, with the aim of making their purpose clear rather than leaving players with decoration alone.",
-    "id": "MT048"
-  },
-  {
-    "type": "heading",
-    "level": 2,
-    "text": "Release response",
-    "anchor": "section-7",
-    "id": "MT049"
+    "text": "The vehicle edition retains the yellow location marker, map grid and menu styling to give both editions a consistent identity. The car and the animals in the trailer show what can travel, while Teleport Vehicle Here shows how to initiate vehicle teleportation. B42.21 and SINGLE + MULTIPLAYER identify the supported game version and modes.",
+    "id": "MTF019"
   },
   {
     "type": "paragraph",
-    "text": "Previously compiled Workshop records show a sum of 612 unique visitors across the series' pages and nearly 400 subscriptions. Right-Click Rescue accounts for 356 unique visitors, 208 subscribers and 18 favorites within those records.",
-    "id": "MT050"
+    "text": "The two logos use similar visual styling to identify them as part of the same series. Different graphics and menu text distinguish the editions. These visual elements communicate some of the mods’ purposes and functions directly, making them easier for players to identify and use.",
+    "id": "MTF020"
   },
   {
     "type": "paragraph",
-    "text": "Table 3  Workshop statistics",
-    "id": "MT051"
+    "text": "Workshop records (Table 1) show a combined total of 612 unique visitors across the series’ pages and close to 400 subscriptions as of 31 October. Right-Click Rescue accounted for 356 unique visitors, 208 subscribers and 18 favourites.",
+    "id": "MTF021"
+  },
+  {
+    "type": "paragraph",
+    "text": "Table 1. Workshop statistics, 19–31 October 2026",
+    "id": "MTF022"
   },
   {
     "type": "table",
     "headers": [
-      "Recorded scope",
+      "Scope",
       "Unique visitors",
       "Subscriptions",
-      "Favorites"
+      "Favourites"
     ],
     "rows": [
       [
         "Map Teleport series total",
         "612",
-        "Nearly 400",
+        "Close to 400",
         "—"
       ],
       [
-        "Including: Right-Click Rescue",
+        "Of which: Right-Click Rescue",
         "356",
         "208",
         "18"
       ]
     ],
-    "id": "MT052"
-  },
-  {
-    "type": "note",
-    "text": "The figures were compiled by the creator and retained from earlier records; they have not been updated as of this revision. The series total already includes Right-Click Rescue, so the two rows must not be added together. Visitors have not been deduplicated across pages. The original records do not establish the statistics date or whether the totals include the page for the test mod that was taken down. Right-Click Rescue's subscriber count is approximately 58.4% of its unique-visitor count. This is a ratio of two recorded counts, not the result of tracking individual visitors through to subscription.",
-    "id": "MT053"
-  },
-  {
-    "type": "paragraph",
-    "text": "These visits, subscriptions and favorites show that a tool developed from one person's playing experience also interested other players. Their comments provide a more direct indication of whether it helped them in practice.",
-    "id": "MT054"
-  },
-  {
-    "type": "figure",
-    "src": "/portfolio/map-teleport/report/player-rescue-feedback.png",
-    "alt": "Positive player feedback",
-    "caption": "Figure 8  ZKevin comments “Funciona / me salvo la vida,” meaning “It works, it saved my life.” The screenshot shows October 23.",
-    "width": 544,
-    "height": 225,
-    "id": "MT055"
-  },
-  {
-    "type": "paragraph",
-    "text": "ZKevin's comment, translated as “It works, it saved my life,” was encouraging for the developer. Its significance to her was straightforward: a tool she had made to address her own difficulties had helped another player too. That recognition made her willing to keep investing time in improving and maintaining the mods.",
-    "id": "MT056"
+    "id": "MTF023"
   },
   {
     "type": "heading",
     "level": 2,
+    "anchor": "section-4",
     "text": "Version maintenance",
-    "anchor": "section-8",
-    "id": "MT057"
+    "id": "MTF025"
   },
   {
     "type": "paragraph",
-    "text": "The mods also encountered problems early after release. The developer revised and tested them repeatedly in response to player feedback. The Workshop page retains 9 change notes for the vehicle edition, documenting the adjustments made during this period.",
-    "id": "MT058"
-  },
-  {
-    "type": "figure",
-    "src": "/portfolio/map-teleport/report/vehicle-release-record.png",
-    "alt": "Vehicle-edition change notes",
-    "caption": "Figure 9  Release information and 9 change notes on the vehicle-edition Workshop page.",
-    "width": 606,
-    "height": 918,
-    "id": "MT059"
-  },
-  {
-    "type": "figure",
-    "src": "/portfolio/map-teleport/report/player-vehicle-feedback.png",
-    "alt": "Report of a vehicle teleport problem",
-    "caption": "Figure 10  JordyMaate reports that character teleportation works but the vehicle option cannot be found. The screenshot shows October 22.",
-    "width": 1387,
-    "height": 213,
-    "id": "MT060"
+    "text": "The vehicle mod was published at 21:19 on 19 October 2026 and had received nine updates at the time of this report;",
+    "id": "MTF026"
   },
   {
     "type": "paragraph",
-    "text": "Investigating such reports begins with confirming the installed mod version and the circumstances in which the action was attempted. The instructions list several conditions to check: the vehicle edition can be installed independently, the game needs to be restarted after an update, and vehicle teleportation must be initiated from inside a vehicle. However, the available records do not establish the specific cause of JordyMaate's problem or the outcome of any retest. Removing the vehicle edition’s dependencies means players no longer need to install prerequisite mods or check their installation when troubleshooting.",
-    "id": "MT061"
+    "text": "the character mod was published at 16:47 on 20 October 2026 and had received eight updates.",
+    "id": "MTF027"
   },
   {
     "type": "paragraph",
-    "text": "She also created Bug Reports & Suggestions threads for all her mods. Players reporting a problem can provide the game version, single-player or multiplayer mode, the steps they took, the mod version and other enabled mods, and attach screenshots, error messages or the console.txt log where possible.",
-    "id": "MT062"
-  },
-  {
-    "type": "figure",
-    "src": "/portfolio/map-teleport/report/bug-report-post.png",
-    "alt": "Bug reporting thread",
-    "caption": "Figure 11  Bug Reports & Suggestions thread listing the information needed for troubleshooting and the log-file location.",
-    "width": 1972,
-    "height": 1195,
-    "id": "MT063"
+    "text": "Maintenance and upgrades will continue.",
+    "id": "MTF028"
   },
   {
     "type": "paragraph",
-    "text": "The threads give players a central place to report problems. She next plans to record the corresponding revision, test results and player retests for each issue, so that players can see its progress and earlier problems can be revisited during later maintenance.",
-    "id": "MT064"
+    "text": "The developer has revised and tested the mods repeatedly in response to player feedback. Workshop change notes record these adjustments. See:",
+    "id": "MTF029"
+  },
+  {
+    "type": "paragraph",
+    "text": "[Character edition](https://steamcommunity.com/sharedfiles/filedetails/?id=3823361659)",
+    "id": "MTF030"
+  },
+  {
+    "type": "paragraph",
+    "text": "[Vehicle edition](https://steamcommunity.com/sharedfiles/filedetails/?id=3822887136)",
+    "id": "MTF031"
   },
   {
     "type": "heading",
     "level": 2,
-    "text": "Next steps",
-    "anchor": "section-9",
-    "id": "MT065"
+    "anchor": "section-5",
+    "text": "Project summary",
+    "id": "MTF032"
   },
   {
     "type": "paragraph",
-    "text": "At this stage, the developer plans to check existing functions in different playing environments before deciding, based on feedback, whether to add new features. The priorities are whether menu items invoke their intended actions, whether characters and convoys arrive according to the transfer rules, and how each reported issue is followed up.",
-    "id": "MT066"
-  },
-  {
-    "type": "paragraph",
-    "text": "Table 4  Planned maintenance",
-    "id": "MT067"
-  },
-  {
-    "type": "table",
-    "headers": [
-      "Maintenance priority",
-      "Existing basis",
-      "Planned work",
-      "Verification criteria"
-    ],
-    "rows": [
-      [
-        "Teleport options and usage conditions",
-        "The developer encountered a missing right-click teleport option while playing, and a player reported a missing vehicle option; a separate option and alternative key binding are already implemented",
-        "Recheck installation, operation inside and outside vehicles, and whether the convoy has stopped in the current release; also check explanations when conditions are not met",
-        "The relevant action can be invoked when its conditions are met; unmet conditions can be explained specifically, with retest results recorded"
-      ],
-      [
-        "Character, animal and convoy state",
-        "Animals can travel with the character, passengers arrive outside the vehicles, and vehicle positions have temporary map markers; multiplayer has undergone initial testing",
-        "Extend tests across distances, vehicle combinations and network environments, checking animal leads, passenger state and behavior after reloading a save",
-        "Check characters, vehicles, passengers and animals separately, retaining records of anomalies and follow-up checks"
-      ],
-      [
-        "Feedback and version records",
-        "Dedicated threads and vehicle-edition change notes are already available",
-        "Link issues to revision versions, test results and player confirmations, and keep progress updated",
-        "Plan to show progress for each report, such as received, under investigation, revision released or player-confirmed resolution"
-      ]
-    ],
-    "id": "MT068"
-  },
-  {
-    "type": "paragraph",
-    "text": "She plans to prioritize whether players can find and use the appropriate teleport menu items. She had previously been unable to find character teleportation in other mods, and after the vehicle edition was released, a player reported being unable to find its vehicle option. Both experiences show the need to keep checking menu usability. Another priority is to check the outcome of each transfer: whether all intended characters, vehicles, passengers and animals have arrived, and whether animal leads have been restored. After reloading the save, their positions and the relevant towing and leading connections also need to be checked against the expected transfer result. These situations need continued testing as versions change. Each revision should also document the issue addressed and its test results, making later checks easier and helping prevent previously reported problems from being overlooked.",
-    "id": "MT069"
-  },
-  {
-    "type": "heading",
-    "level": 2,
-    "text": "Project reflection",
-    "anchor": "section-10",
-    "id": "MT070"
-  },
-  {
-    "type": "paragraph",
-    "text": "Map Teleport began with a recurring, concrete inconvenience: when the developer wanted to teleport her character by right-clicking a location on the map, there was no usable teleport option in the menu. She made an installable tool to address this problem, then gradually added support for accompanying animals and vehicle convoys. Her concern extended beyond whether the character could reach a destination to the extra tasks a player would have to perform. She adjusted the features and instructions accordingly, aiming to reduce the additional work required before and after a transfer.",
-    "id": "MT071"
-  },
-  {
-    "type": "paragraph",
-    "text": "Subscriptions and comments encouraged the developer, while reports of faults also made clear the need to keep following up on players' difficulties after release. She next hopes to improve the existing functions and explain their transfer scope and usage conditions clearly, so players know how to use them and can find a feedback channel and receive a response when something goes wrong.",
-    "id": "MT072"
+    "text": "As supporting tools for Project Zomboid, the Map Teleport mods improve compatibility and the experience of character teleportation. The developer’s original vehicle mod prevents players from losing their possessions when teleporting, making the feature more considerate of their needs. Seeing players leave suggestions, express appreciation and share their joy after receiving help has strengthened my confidence in developing new mods.",
+    "id": "MTF033"
   }
 ]
